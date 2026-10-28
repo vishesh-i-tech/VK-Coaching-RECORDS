@@ -117,3 +117,4 @@
 - **Focus Indicators**: Visible 3px violet outline (`#7C6CF0`) on all interactive buttons, links, and form inputs.
 - **DOM ID Verification**: 100% of JavaScript selector hooks preserved without breakage.
 - **Zero Heavy Dependencies**: Pure CSS, vanilla JS, inline SVG, Google Fonts (`display=swap`). Zero npm build steps required.
+

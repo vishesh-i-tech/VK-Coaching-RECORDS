@@ -1,6 +1,6 @@
 /**
  * ============================================================================
- * CLASSDESK - CLIENT CONFIGURATION & INTERACTIVE LOGIC
+ * CLASSDESK - CLIENT CONFIGURATION & INTERACTIVE LOGIC (VIOLET SAAS EDITION)
  * ============================================================================
  * You can customize the entire landing page for any coaching institute client
  * simply by updating this single CONFIG object below.
@@ -63,7 +63,62 @@ function initConfigHydration() {
 }
 
 /* ============================================================================
-   2. STICKY HEADER & MOBILE NAVIGATION
+   2. THEME TOGGLE (LIGHT & DARK MODE)
+   ============================================================================ */
+function initThemeToggle() {
+  const toggleBtn = document.getElementById("themeToggleBtn");
+  const root = document.documentElement;
+  
+  // Determine initial theme: saved preference -> system preference -> light default
+  const savedTheme = localStorage.getItem("classdesk-theme");
+  const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+  const currentTheme = savedTheme || (prefersDark ? "dark" : "light");
+
+  function applyTheme(theme) {
+    if (theme === "dark") {
+      root.setAttribute("data-theme", "dark");
+      if (toggleBtn) {
+        toggleBtn.innerHTML = `
+          <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        `;
+        toggleBtn.setAttribute("title", "Switch to Light Mode");
+      }
+    } else {
+      root.removeAttribute("data-theme");
+      if (toggleBtn) {
+        toggleBtn.innerHTML = `
+          <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        `;
+        toggleBtn.setAttribute("title", "Switch to Dark Mode");
+      }
+    }
+    localStorage.setItem("classdesk-theme", theme);
+  }
+
+  applyTheme(currentTheme);
+
+  if (toggleBtn) {
+    toggleBtn.addEventListener("click", () => {
+      const isDark = root.getAttribute("data-theme") === "dark";
+      applyTheme(isDark ? "light" : "dark");
+    });
+  }
+}
+
+/* ============================================================================
+   3. STICKY HEADER & MOBILE NAVIGATION
    ============================================================================ */
 function initNavigation() {
   const header = document.getElementById("header");
@@ -107,7 +162,7 @@ function initNavigation() {
 }
 
 /* ============================================================================
-   3. INTERACTIVE DEMO PLAYGROUND (ATTENDANCE & FEE SIMULATOR)
+   4. INTERACTIVE DEMO PLAYGROUND (ATTENDANCE & FEE SIMULATOR)
    ============================================================================ */
 const DEMO_STUDENTS = [
   { id: 101, name: "Aarav Sharma", batch: "Class 10 Maths (4:00 PM)", isPresent: true, isPaid: true, receiptNo: "CD-1041" },
@@ -168,7 +223,7 @@ function initInteractiveDemo() {
     btnMarkAllPresent.addEventListener("click", () => {
       attendanceState.forEach(s => s.isPresent = true);
       renderAttendanceSimulator();
-      showToast("attendanceToast", "All 6 students marked Present! Attendance rate is 100%.");
+      showToast("toastMessage", "All 6 students marked Present! Attendance rate is 100%.");
     });
   }
 
@@ -191,6 +246,7 @@ function renderAttendanceSimulator() {
   const presentCountEl = document.getElementById("livePresentCount");
   const absentCountEl = document.getElementById("liveAbsentCount");
   const percentEl = document.getElementById("liveAttendancePercent");
+  const progressRing = document.getElementById("attendanceProgressRing");
 
   if (!container || !presentCountEl || !absentCountEl || !percentEl) return;
 
@@ -202,6 +258,16 @@ function renderAttendanceSimulator() {
   presentCountEl.textContent = `${presentCount} / ${total}`;
   absentCountEl.textContent = `${absentCount}`;
   percentEl.textContent = `${percentage}%`;
+
+  // Update SVG Circular Ring if present
+  if (progressRing) {
+    progressRing.setAttribute("stroke-dasharray", `${percentage}, 100`);
+    if (percentage < 75) {
+      progressRing.style.stroke = "var(--color-warning)";
+    } else {
+      progressRing.style.stroke = "var(--primary-violet)";
+    }
+  }
 
   container.innerHTML = "";
 
@@ -255,6 +321,7 @@ function renderFeeSimulator() {
   const targetEl = document.getElementById("liveFeeTarget");
   const collectedEl = document.getElementById("liveFeeCollected");
   const pendingEl = document.getElementById("liveFeePending");
+  const progressFill = document.getElementById("feeProgressFill");
 
   if (!container || !targetEl || !collectedEl || !pendingEl) return;
 
@@ -269,6 +336,12 @@ function renderFeeSimulator() {
   collectedEl.textContent = `${CONFIG.currencySymbol}${totalCollected.toLocaleString("en-IN")}`;
   pendingEl.textContent = `${CONFIG.currencySymbol}${totalPending.toLocaleString("en-IN")}`;
 
+  // Update Fee Progress Bar
+  if (progressFill && totalTarget > 0) {
+    const percent = Math.round((totalCollected / totalTarget) * 100);
+    progressFill.style.width = `${percent}%`;
+  }
+
   container.innerHTML = "";
 
   feeState.forEach((student) => {
@@ -282,7 +355,7 @@ function renderFeeSimulator() {
         <span class="sim-avatar" aria-hidden="true">${initials}</span>
         <div>
           <span class="sim-name">${student.name}</span>
-          <span class="sim-batch">${CONFIG.currencySymbol}${feePerStudent.toLocaleString("en-IN")}/month • ${student.isPaid ? `Receipt #${student.receiptNo}` : '<span class="text-danger">October Due</span>'}</span>
+          <span class="sim-batch">${CONFIG.currencySymbol}${feePerStudent.toLocaleString("en-IN")}/month • ${student.isPaid ? `Receipt #${student.receiptNo}` : '<span class="badge badge-warning">October Due</span>'}</span>
         </div>
       </div>
       <div>
@@ -326,7 +399,7 @@ function showToast(targetId, message) {
 }
 
 /* ============================================================================
-   4. FAQ ACCORDION (ACCESSIBLE KEYBOARD-FRIENDLY)
+   5. FAQ ACCORDION (KEYBOARD ACCESSIBLE)
    ============================================================================ */
 function initAccordion() {
   const triggers = document.querySelectorAll(".faq-trigger");
@@ -347,7 +420,7 @@ function initAccordion() {
 }
 
 /* ============================================================================
-   5. DEMO MODAL & FORM HANDLERS
+   6. DEMO MODAL & FORM HANDLERS
    ============================================================================ */
 function initModalAndForms() {
   const modalBackdrop = document.getElementById("demoModalBackdrop");
@@ -423,6 +496,8 @@ function initModalAndForms() {
         // Show success state
         if (modalSuccessMsg) {
           modalSuccessMsg.hidden = false;
+          modalSuccessMsg.removeAttribute("hidden");
+          modalSuccessMsg.style.display = "block";
         }
 
         // Prepare friendly prefilled WhatsApp inquiry
@@ -437,7 +512,7 @@ function initModalAndForms() {
     }
   }
 
-  // Inline Landing Demo Form
+  // Inline Landing Demo Form (#contact)
   const landingForm = document.getElementById("landingDemoForm");
   const successState = document.getElementById("formSuccessState");
 
@@ -470,15 +545,55 @@ function initModalAndForms() {
 }
 
 /* ============================================================================
-   6. SCROLL REVEAL (SUBTLE PURPOSEFUL MOTION)
+   7. ANIMATED NUMBER COUNTERS (On Scroll)
+   ============================================================================ */
+function initCounters() {
+  const counterElements = document.querySelectorAll("[data-counter]");
+  if (!counterElements.length || !("IntersectionObserver" in window)) return;
+
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const el = entry.target;
+        const target = parseInt(el.getAttribute("data-counter"), 10);
+        const suffix = el.getAttribute("data-suffix") || "";
+        const duration = 1200; // ms
+        const startTime = performance.now();
+
+        function updateCounter(currentTime) {
+          const elapsed = currentTime - startTime;
+          const progress = Math.min(elapsed / duration, 1);
+          // Ease out cubic
+          const easeProgress = 1 - Math.pow(1 - progress, 3);
+          const currentVal = Math.floor(easeProgress * target);
+
+          el.textContent = `${currentVal}${suffix}`;
+
+          if (progress < 1) {
+            requestAnimationFrame(updateCounter);
+          } else {
+            el.textContent = `${target}${suffix}`;
+          }
+        }
+
+        requestAnimationFrame(updateCounter);
+        obs.unobserve(el);
+      }
+    });
+  }, { threshold: 0.3 });
+
+  counterElements.forEach((el) => observer.observe(el));
+}
+
+/* ============================================================================
+   8. SCROLL REVEAL (SUBTLE PURPOSEFUL MOTION)
    ============================================================================ */
 function initScrollReveal() {
-  // Check if user prefers reduced motion
   const prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   if (prefersReduced) return;
 
   const revealTargets = document.querySelectorAll(
-    ".feature-card-detailed, .paper-register-card, .problem-points-card, .step-card, .sub-feature-card, .cta-banner-card"
+    ".feature-card-detailed, .paper-register-card, .solution-preview-card, .step-card, .sub-feature-card, .roadmap-card, .stat-box-modern"
   );
 
   if (!("IntersectionObserver" in window)) return;
@@ -509,9 +624,11 @@ function initScrollReveal() {
    ============================================================================ */
 document.addEventListener("DOMContentLoaded", () => {
   initConfigHydration();
+  initThemeToggle();
   initNavigation();
   initInteractiveDemo();
   initAccordion();
   initModalAndForms();
+  initCounters();
   initScrollReveal();
 });

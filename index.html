@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>ClassDesk | Simple Coaching Management for Teachers & Tuition Classes</title>
   <meta name="description" content="Replace paper registers with one simple dashboard. Track student attendance, monthly fees, test marks, and progress reports on your mobile in seconds.">
-  <meta name="theme-color" content="#133926">
+  <meta name="theme-color" content="#7C6CF0">
 
   <!-- Open Graph / WhatsApp Preview Meta Tags -->
   <meta property="og:type" content="website">
@@ -14,30 +14,30 @@
   <meta property="og:image" content="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=1200&auto=format&fit=crop&q=80">
   <meta property="og:url" content="https://classdesk.in">
 
-  <!-- Favicon (Inline SVG Notebook Icon) -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23133926'/><path d='M8 6h15a3 3 0 0 1 3 3v14a3 3 0 0 1-3 3H8V6z' fill='%23FAF7F2'/><path d='M8 6h3v20H8V6z' fill='%23C85A17'/><line x1='14' y1='11' x2='22' y2='11' stroke='%23133926' stroke-width='1.5' stroke-linecap='round'/><line x1='14' y1='15' x2='22' y2='15' stroke='%23133926' stroke-width='1.5' stroke-linecap='round'/><line x1='14' y1='19' x2='19' y2='19' stroke='%23133926' stroke-width='1.5' stroke-linecap='round'/></svg>">
+  <!-- Favicon (Inline SVG Notebook Icon in Violet Theme) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%237C6CF0'/><path d='M8 6h15a3 3 0 0 1 3 3v14a3 3 0 0 1-3 3H8V6z' fill='%23FAF8FF'/><path d='M8 6h3v20H8V6z' fill='%23E25BD0'/><line x1='14' y1='11' x2='22' y2='11' stroke='%237C6CF0' stroke-width='1.8' stroke-linecap='round'/><line x1='14' y1='15' x2='22' y2='15' stroke='%237C6CF0' stroke-width='1.8' stroke-linecap='round'/><line x1='14' y1='19' x2='19' y2='19' stroke='%237C6CF0' stroke-width='1.8' stroke-linecap='round'/></svg>">
 
-  <!-- Google Fonts: Fraunces (Headings) & Plus Jakarta Sans (Body & UI) -->
+  <!-- Google Fonts: Plus Jakarta Sans & Outfit -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <!-- =========================================================================
-       1. STICKY NAVBAR
+       1. STICKY GLASS NAVBAR
        ========================================================================= -->
   <header class="site-header" id="header">
     <div class="container header-inner">
       <a href="#hero" class="brand-logo" aria-label="ClassDesk Home">
         <span class="logo-mark">
-          <svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <rect width="28" height="28" rx="6" fill="#133926"/>
-            <path d="M7 6H21C22.1046 6 23 6.89543 23 8V20C23 21.1046 22.1046 22 21 22H7V6Z" fill="#FAF7F2"/>
-            <rect x="7" y="6" width="3.5" height="16" fill="#C85A17"/>
-            <path d="M13 11H19M13 14.5H19M13 18H16.5" stroke="#133926" stroke-width="1.6" stroke-linecap="round"/>
+          <svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" width="22" height="22" aria-hidden="true">
+            <rect width="28" height="28" rx="7" fill="currentColor"/>
+            <path d="M7 6H21C22.1046 6 23 6.89543 23 8V20C23 21.1046 22.1046 22 21 22H7V6Z" fill="#FAF8FF"/>
+            <rect x="7" y="6" width="3.5" height="16" fill="#E25BD0"/>
+            <path d="M13 11H19M13 14.5H19M13 18H16.5" stroke="#7C6CF0" stroke-width="1.8" stroke-linecap="round"/>
           </svg>
         </span>
         <span class="logo-text">
@@ -60,19 +60,35 @@
 
       <!-- Desktop Header Actions -->
       <div class="header-cta-group">
-        <a href="#contact" class="btn btn-secondary-subtle header-phone-btn" data-config-call aria-label="Call Us">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-          <span class="header-phone-text" data-config="phoneNumber">+91 98765 43210</span>
-        </a>
-        <a href="#demo-modal" class="btn btn-primary" id="headerDemoBtn">Request a Demo</a>
-      </div>
+        <!-- Theme Toggle Button -->
+        <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle Dark / Light Theme" title="Toggle theme">
+          <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
 
-      <!-- Mobile Menu Toggle Button -->
-      <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-expanded="false" aria-controls="mobileDrawer" aria-label="Toggle navigation menu">
-        <span class="hamburger-bar"></span>
-        <span class="hamburger-bar"></span>
-        <span class="hamburger-bar"></span>
-      </button>
+        <a href="#contact" class="btn header-phone-btn" data-config-call aria-label="Call Us">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          <span data-config="phoneNumber">+91 98765 43210</span>
+        </a>
+
+        <a href="#demo-modal" class="btn btn-primary" id="headerDemoBtn">Request a Demo</a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-expanded="false" aria-controls="mobileDrawer" aria-label="Toggle navigation menu">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
     </div>
 
     <!-- Mobile Drawer Navigation -->
@@ -100,15 +116,17 @@
   <main id="mainContent">
 
     <!-- =========================================================================
-         2. HERO SECTION
+         2. HERO SECTION (With CSS Phone Mockup & Floating Satellite Cards)
          ========================================================================= -->
     <section class="hero-section" id="hero">
+      <div class="hero-glow-blob"></div>
+
       <div class="container">
         
         <!-- Trust badge -->
         <div class="hero-badge-wrap">
           <span class="hero-badge">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
             Built for coaching institutes, tuition classes & academies
           </span>
         </div>
@@ -117,12 +135,7 @@
         <div class="hero-text-block">
           <h1 class="hero-title">
             Your entire coaching institute on one screen. Put away the
-            <span class="highlight-handdrawn">
-              paper registers.
-              <svg class="handdrawn-svg" viewBox="0 0 240 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <path d="M3 14C65 4.5 175 3.5 237 11.5" stroke="#C85A17" stroke-width="3.5" stroke-linecap="round"/>
-              </svg>
-            </span>
+            <span class="violet-gradient-text">paper registers.</span>
           </h1>
           <p class="hero-lead">
             Mark daily attendance in 10 seconds, see every pending fee at a glance, and track student test marks without maintaining five separate notebooks.
@@ -141,221 +154,136 @@
 
           <div class="hero-trust-bullets">
             <span class="trust-pill">
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="check-icon" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" class="check-icon" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
               Works on any phone
             </span>
             <span class="trust-pill">
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="check-icon" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" class="check-icon" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
               No computer knowledge needed
             </span>
             <span class="trust-pill">
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="check-icon" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" class="check-icon" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
               Ready in 15 minutes
             </span>
           </div>
         </div>
 
-        <!-- Realistic Product Dashboard UI Mockup -->
-        <div class="hero-mockup-wrap">
-          <div class="device-frame">
-            
-            <!-- Window titlebar -->
-            <div class="frame-bar">
-              <div class="frame-dots">
-                <span class="dot dot-red"></span>
-                <span class="dot dot-yellow"></span>
-                <span class="dot dot-green"></span>
-              </div>
-              <div class="frame-title">
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
-                <span>classdesk.app/dashboard • Apex Coaching Academy</span>
-              </div>
-              <div class="frame-badge">Live View</div>
+        <!-- Hero Stage: Center Phone Mockup + Floating Satellite Cards -->
+        <div class="hero-stage">
+          
+          <!-- Floating Satellite Card 1: Today's Attendance -->
+          <div class="floating-card card-top-left">
+            <span class="fc-title">Today's Attendance</span>
+            <div class="fc-main-val">
+              <span>93.3%</span>
+              <span class="badge badge-success">28 / 30</span>
+            </div>
+            <p class="fc-subtext">2 absent today • 1-tap WhatsApp alert sent to parents</p>
+          </div>
+
+          <!-- Floating Satellite Card 2: October Fees -->
+          <div class="floating-card card-top-right">
+            <span class="fc-title">October Fee Collected</span>
+            <div class="fc-main-val">
+              <span>₹1,42,500</span>
+              <span class="badge badge-warning">4 Due</span>
+            </div>
+            <p class="fc-subtext">₹6,000 pending from 4 students</p>
+          </div>
+
+          <!-- Floating Satellite Card 3: Last Unit Test -->
+          <div class="floating-card card-bottom-left">
+            <span class="fc-title">Last Unit Test (Maths)</span>
+            <div class="fc-main-val">
+              <span>79.4%</span>
+              <span class="badge badge-violet">Batch Avg</span>
+            </div>
+            <p class="fc-subtext">Topper: Aarav Sharma (96%) • 5 Tests logged</p>
+          </div>
+
+          <!-- Floating Avatar Stack Card -->
+          <div class="avatar-stack-card">
+            <div class="avatar-stack">
+              <span class="avatar-stack-item">AS</span>
+              <span class="avatar-stack-item">PV</span>
+              <span class="avatar-stack-item">AP</span>
+              <span class="avatar-stack-item">KM</span>
+            </div>
+            <span class="avatar-stack-caption">30 Active Students</span>
+          </div>
+
+          <!-- Center Realistic CSS Phone Mockup -->
+          <div class="phone-mockup">
+            <div class="phone-notch">
+              <div class="phone-speaker"></div>
+              <div class="phone-camera"></div>
             </div>
 
-            <!-- Realistic Dashboard Screen -->
-            <div class="dashboard-ui">
-              
-              <!-- Dashboard Header bar -->
-              <div class="dash-top-bar">
-                <div class="dash-user-info">
-                  <span class="dash-avatar">VS</span>
-                  <div>
-                    <h2 class="dash-coach-name">Apex Coaching Academy</h2>
-                    <p class="dash-meta-sub">Today: Wednesday, 28 October • 4 Active Batches</p>
-                  </div>
-                </div>
-                <div class="dash-quick-actions">
-                  <span class="batch-select-badge">Class 10 Maths (4:00 PM)</span>
-                </div>
+            <div class="phone-screen">
+              <div class="phone-app-header">
+                <span class="phone-coach-title">Apex Coaching Academy</span>
+                <span class="phone-batch-badge">Class 10 Maths (4:00 PM)</span>
               </div>
 
-              <!-- Top Metrics Cards -->
-              <div class="dash-stats-grid">
-                
-                <div class="stat-card">
-                  <div class="stat-icon-wrap bg-green-tint">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#133926" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><polyline points="17 11 19 13 23 9"></polyline></svg>
-                  </div>
-                  <div class="stat-content">
-                    <span class="stat-label">Today's Attendance</span>
-                    <div class="stat-number-row">
-                      <span class="stat-number">93.3%</span>
-                      <span class="badge badge-success">28 / 30</span>
-                    </div>
-                    <span class="stat-foot text-muted">2 absent today (SMS sent)</span>
-                  </div>
-                </div>
-
-                <div class="stat-card">
-                  <div class="stat-icon-wrap bg-amber-tint">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C85A17" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
-                  </div>
-                  <div class="stat-content">
-                    <span class="stat-label">October Fee Collected</span>
-                    <div class="stat-number-row">
-                      <span class="stat-number">₹1,42,500</span>
-                      <span class="badge badge-warning">4 Due</span>
-                    </div>
-                    <span class="stat-foot text-muted">₹6,000 pending from 4 students</span>
-                  </div>
-                </div>
-
-                <div class="stat-card stat-card-highlight">
-                  <div class="stat-icon-wrap bg-blue-tint">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1B4D3E" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
-                  </div>
-                  <div class="stat-content">
-                    <span class="stat-label">Last Unit Test (Maths)</span>
-                    <div class="stat-number-row">
-                      <span class="stat-number">79.4%</span>
-                      <span class="badge badge-info">Batch Avg</span>
-                    </div>
-                    <span class="stat-foot text-muted">Topper: Aarav Sharma (96%)</span>
-                  </div>
-                </div>
-
-              </div>
-
-              <!-- Main Mockup Work Area: Attendance Sheet & Pending Fee Alert -->
-              <div class="dash-split-preview">
-                
-                <!-- Left: Daily Attendance Roster -->
-                <div class="dash-panel">
-                  <div class="panel-header">
+              <div class="phone-roster">
+                <div class="phone-student-card">
+                  <div class="phone-st-left">
+                    <span class="phone-avatar">AS</span>
                     <div>
-                      <h3 class="panel-title">Today's Batch Roster</h3>
-                      <p class="panel-sub">Class 10 Maths • 4:00 PM to 5:30 PM</p>
+                      <strong class="phone-st-name">Aarav Sharma</strong>
+                      <span class="phone-st-sub">Roll #101 • 96% marks</span>
                     </div>
-                    <span class="roster-tag">One-Tap Mark</span>
                   </div>
-                  
-                  <div class="roster-list">
-                    
-                    <div class="roster-item">
-                      <div class="student-info">
-                        <span class="avatar-circle">AS</span>
-                        <div>
-                          <strong class="student-name">Aarav Sharma</strong>
-                          <span class="student-meta">Roll #101 • 96% overall</span>
-                        </div>
-                      </div>
-                      <span class="status-btn btn-present">
-                        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                        Present
-                      </span>
-                    </div>
-
-                    <div class="roster-item">
-                      <div class="student-info">
-                        <span class="avatar-circle">PV</span>
-                        <div>
-                          <strong class="student-name">Priya Verma</strong>
-                          <span class="student-meta">Roll #102 • 92% overall</span>
-                        </div>
-                      </div>
-                      <span class="status-btn btn-present">
-                        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                        Present
-                      </span>
-                    </div>
-
-                    <div class="roster-item item-absent">
-                      <div class="student-info">
-                        <span class="avatar-circle avatar-absent">RY</span>
-                        <div>
-                          <strong class="student-name">Rohit Yadav</strong>
-                          <span class="student-meta text-danger">Roll #103 • Absent today</span>
-                        </div>
-                      </div>
-                      <span class="status-btn btn-absent">
-                        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
-                        Absent
-                      </span>
-                    </div>
-
-                    <div class="roster-item">
-                      <div class="student-info">
-                        <span class="avatar-circle">AP</span>
-                        <div>
-                          <strong class="student-name">Ananya Patel</strong>
-                          <span class="student-meta">Roll #104 • 88% overall</span>
-                        </div>
-                      </div>
-                      <span class="status-btn btn-present">
-                        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                        Present
-                      </span>
-                    </div>
-
-                  </div>
+                  <span class="phone-tag-present">Present</span>
                 </div>
 
-                <!-- Right: Fee Due Snapshot & Parent WhatsApp Notification -->
-                <div class="dash-panel">
-                  <div class="panel-header">
+                <div class="phone-student-card">
+                  <div class="phone-st-left">
+                    <span class="phone-avatar">PV</span>
                     <div>
-                      <h3 class="panel-title">Pending Monthly Fees</h3>
-                      <p class="panel-sub">October 2026 dues</p>
+                      <strong class="phone-st-name">Priya Verma</strong>
+                      <span class="phone-st-sub">Roll #102 • 92% marks</span>
                     </div>
-                    <span class="roster-tag fee-tag">₹6,000 Total Due</span>
                   </div>
-
-                  <div class="fee-cards-list">
-                    
-                    <div class="fee-row-card">
-                      <div class="fee-student-info">
-                        <strong>Kabir Mehta</strong>
-                        <span class="fee-sub">NEET Foundation • ₹1,500</span>
-                      </div>
-                      <span class="badge badge-warning">Due 5 Days</span>
-                    </div>
-
-                    <div class="fee-row-card">
-                      <div class="fee-student-info">
-                        <strong>Rohit Yadav</strong>
-                        <span class="fee-sub">Class 10 Maths • ₹1,500</span>
-                      </div>
-                      <span class="badge badge-warning">Due 12 Days</span>
-                    </div>
-
-                  </div>
-
-                  <!-- WhatsApp Instant Alert Snippet -->
-                  <div class="quick-whatsapp-preview">
-                    <div class="msg-meta-bar">
-                      <svg width="14" height="14" viewBox="0 0 24 24" fill="#25D366" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.456 5.711 1.456h.005c6.554 0 11.89-5.336 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-                      <span>1-Tap WhatsApp Reminder</span>
-                    </div>
-                    <p class="sample-chat-line">"Dear Mr. Yadav, a gentle reminder that Rohit's October coaching fee of ₹1,500 is pending. Thank you."</p>
-                  </div>
-
+                  <span class="phone-tag-present">Present</span>
                 </div>
 
-              </div>
+                <div class="phone-student-card">
+                  <div class="phone-st-left">
+                    <span class="phone-avatar" style="background:#EF4444;">RY</span>
+                    <div>
+                      <strong class="phone-st-name">Rohit Yadav</strong>
+                      <span class="phone-st-sub" style="color:#EF4444;">Roll #103 • Absent</span>
+                    </div>
+                  </div>
+                  <span class="phone-tag-absent">Absent</span>
+                </div>
 
+                <div class="phone-student-card">
+                  <div class="phone-st-left">
+                    <span class="phone-avatar">AP</span>
+                    <div>
+                      <strong class="phone-st-name">Ananya Patel</strong>
+                      <span class="phone-st-sub">Roll #104 • 88% marks</span>
+                    </div>
+                  </div>
+                  <span class="phone-tag-present">Present</span>
+                </div>
+
+                <div class="phone-student-card">
+                  <div class="phone-st-left">
+                    <span class="phone-avatar">KM</span>
+                    <div>
+                      <strong class="phone-st-name">Kabir Mehta</strong>
+                      <span class="phone-st-sub">Roll #105 • ₹500 fee due</span>
+                    </div>
+                  </div>
+                  <span class="phone-tag-present">Present</span>
+                </div>
+              </div>
             </div>
           </div>
+
         </div>
 
       </div>
@@ -363,7 +291,85 @@
 
 
     <!-- =========================================================================
-         3. THE PROBLEM SECTION
+         3. SLANTED VIOLET BAND (Signature 3-Feature Banner)
+         ========================================================================= -->
+    <section class="slanted-band-section" aria-label="Core Highlights">
+      <div class="container">
+        <div class="slanted-band-inner">
+          
+          <div class="band-feature-item">
+            <div class="band-icon-wrap">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </div>
+            <div class="band-feature-text">
+              <strong>10-Second Attendance</strong>
+              <p>Everyone starts present. Tap only absent students. WhatsApp alert sent instantly.</p>
+            </div>
+          </div>
+
+          <div class="band-feature-item">
+            <div class="band-icon-wrap">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+            </div>
+            <div class="band-feature-text">
+              <strong>1-Tap Fee Dues & Receipts</strong>
+              <p>See exactly who owes fees. Generate clean receipts and send polite WhatsApp reminders.</p>
+            </div>
+          </div>
+
+          <div class="band-feature-item">
+            <div class="band-icon-wrap">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+            </div>
+            <div class="band-feature-text">
+              <strong>Automated Parent Reports</strong>
+              <p>Visual test score trends and attendance progress cards ready for parent-teacher meetings.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =========================================================================
+         4. REAL STATS ROW (Animated Counters)
+         ========================================================================= -->
+    <section class="stats-section" aria-label="Key Numbers">
+      <div class="container">
+        <div class="stats-grid">
+          
+          <div class="stat-box-modern">
+            <div class="stat-counter-val" data-counter="10" data-suffix="s">10s</div>
+            <div class="stat-counter-label">Roll Call Time</div>
+            <div class="stat-counter-sub">For a full batch of 30 students</div>
+          </div>
+
+          <div class="stat-box-modern">
+            <div class="stat-counter-val" data-counter="100" data-suffix="%">100%</div>
+            <div class="stat-counter-label">Paperless Registers</div>
+            <div class="stat-counter-sub">No lost or torn notebooks</div>
+          </div>
+
+          <div class="stat-box-modern">
+            <div class="stat-counter-val" data-counter="15" data-suffix="m">15m</div>
+            <div class="stat-counter-label">Simple Onboarding</div>
+            <div class="stat-counter-sub">Start with your own batches today</div>
+          </div>
+
+          <div class="stat-box-modern">
+            <div class="stat-counter-val">0</div>
+            <div class="stat-counter-label">Tech Skills Needed</div>
+            <div class="stat-counter-sub">As simple as sending WhatsApp messages</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =========================================================================
+         5. THE PROBLEM SECTION
          ========================================================================= -->
     <section class="problem-section" id="problem">
       <div class="container">
@@ -372,7 +378,7 @@
           <span class="sub-badge">The Everyday Reality</span>
           <h2 class="section-title">
             The quiet headache of managing coaching on
-            <span class="underline-ink">paper registers</span>
+            <span class="violet-gradient-text">paper registers</span>
           </h2>
           <p class="section-lead">
             You started your institute to teach and inspire students. But every evening ends with the same exhausting clerical chores.
@@ -381,122 +387,78 @@
 
         <div class="problem-split-grid">
           
-          <!-- Realistic Ledger Notebook Mockup -->
+          <!-- Realistic Ledger Notebook Card -->
           <div class="paper-register-card">
-            <div class="notebook-spine">
-              <span class="stitch"></span>
-              <span class="stitch"></span>
-              <span class="stitch"></span>
-              <span class="stitch"></span>
-              <span class="stitch"></span>
+            <div class="paper-card-header">
+              <span class="paper-title">Physical Registers (The Old Way)</span>
+              <span class="badge badge-danger">Messy & Stressful</span>
             </div>
-            <div class="notebook-page">
-              <div class="notebook-header">
-                <span class="notebook-title-hand">Attendance & Fees Register (2025–26)</span>
-                <span class="notebook-stamp">Messy & Hard to Track</span>
+
+            <div class="problem-point-item">
+              <span class="problem-icon-bad">✕</span>
+              <div class="problem-text">
+                <strong>15 Minutes Wasted per Lecture</strong>
+                <p>Calling out 30 names aloud takes valuable teaching time away from every single batch every day.</p>
               </div>
-              <div class="ruled-table">
-                <div class="ruled-row ruled-head">
-                  <span>Name</span>
-                  <span>10th</span>
-                  <span>11th</span>
-                  <span>12th</span>
-                  <span>Oct Fee</span>
-                </div>
-                <div class="ruled-row">
-                  <span>Aarav S.</span>
-                  <span class="p-tick">P</span>
-                  <span class="p-tick">P</span>
-                  <span class="p-tick">P</span>
-                  <span class="fee-scribble">Pd 1500 (slip?)</span>
-                </div>
-                <div class="ruled-row">
-                  <span>Priya V.</span>
-                  <span class="p-tick">P</span>
-                  <span class="p-cross">A</span>
-                  <span class="p-tick">P</span>
-                  <span class="fee-scribble">Paid cash</span>
-                </div>
-                <div class="ruled-row crossed-out-row">
-                  <span class="scratched-text">Rohit Y.</span>
-                  <span class="p-cross">A</span>
-                  <span class="p-cross">A</span>
-                  <span class="p-tick">?</span>
-                  <span class="fee-scribble text-red">Pending?? (Call mom)</span>
-                </div>
-                <div class="ruled-row">
-                  <span>Ananya P.</span>
-                  <span class="p-tick">P</span>
-                  <span class="p-tick">P</span>
-                  <span class="p-tick">P</span>
-                  <span class="fee-scribble">Paid 1500</span>
-                </div>
-                <div class="ruled-row">
-                  <span>Kabir M.</span>
-                  <span class="p-tick">P</span>
-                  <span class="p-cross">A</span>
-                  <span class="p-tick">P</span>
-                  <span class="fee-scribble text-red">Due from Sept?</span>
-                </div>
+            </div>
+
+            <div class="problem-point-item">
+              <span class="problem-icon-bad">✕</span>
+              <div class="problem-text">
+                <strong>Sunday Fee Calculation Stress</strong>
+                <p>Flipping page after page with a pen, calculating who paid, who owes ₹500, and which receipt counterfoil is missing.</p>
               </div>
-              <div class="notebook-note">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
-                <span>"Did Kabir pay for September or October? Need to check the paper receipt counterfoil."</span>
+            </div>
+
+            <div class="problem-point-item">
+              <span class="problem-icon-bad">✕</span>
+              <div class="problem-text">
+                <strong>Awkward Parent Conversations</strong>
+                <p>When parents ask for past attendance or marks, you have to flip through multiple registers while they wait impatiently.</p>
+              </div>
+            </div>
+
+            <div class="problem-point-item">
+              <span class="problem-icon-bad">✕</span>
+              <div class="problem-text">
+                <strong>Zero Backup</strong>
+                <p>If a register gets torn, water-damaged, or lost, a whole year of fee and student records vanishes permanently.</p>
               </div>
             </div>
           </div>
 
-          <!-- Problem Breakdown Points -->
-          <div class="problem-points-card">
-            <h3 class="problem-box-title">What happens when you rely on notebooks:</h3>
-            
-            <ul class="problem-list">
-              <li class="problem-item">
-                <div class="problem-icon">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
-                </div>
-                <div>
-                  <h4 class="point-title">Slow record searches when parents visit</h4>
-                  <p class="point-desc">When a parent arrives at your desk asking about their child's attendance and marks, you spend five awkward minutes flipping through multiple registers.</p>
-                </div>
-              </li>
+          <!-- Digital Clarity Solution Card -->
+          <div class="solution-preview-card">
+            <div>
+              <span class="sub-badge">With ClassDesk</span>
+              <h3 style="font-size:1.6rem; margin-top:14px; margin-bottom:12px;">Everything organized in your pocket</h3>
+              <p style="color:var(--text-body); line-height:1.6;">
+                Save 1+ hour every day. Complete clarity for your batches, instant fee visibility, and professional parent communication from your phone.
+              </p>
 
-              <li class="problem-item">
-                <div class="problem-icon">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
-                </div>
-                <div>
-                  <h4 class="point-title">Fee dues slip through the cracks</h4>
-                  <p class="point-desc">When fees are scribbled in margins, missed months go unnoticed. By the time you realize a student has not paid, two months have already passed.</p>
-                </div>
-              </li>
-
-              <li class="problem-item">
-                <div class="problem-icon">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
-                </div>
-                <div>
-                  <h4 class="point-title">Attendance steals 15 minutes of class time</h4>
-                  <p class="point-desc">Calling out thirty-five names every single day wastes valuable minutes that you could have spent teaching a difficult concept or solving questions.</p>
-                </div>
-              </li>
-
-              <li class="problem-item">
-                <div class="problem-icon">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline></svg>
-                </div>
-                <div>
-                  <h4 class="point-title">Paper tears, gets lost, and cannot be backed up</h4>
-                  <p class="point-desc">A single spilled cup of tea or a misplaced register can wipe out an entire year of attendance, fee logs, and student performance records.</p>
-                </div>
-              </li>
-            </ul>
-
-            <div class="problem-quote-strip">
-              <span class="quote-symbol">“</span>
-              <p>Teachers should spend their time teaching students, not maintaining five thick paper registers every night.</p>
+              <ul class="solution-checklist">
+                <li>
+                  <span class="check-bubble">✓</span>
+                  <span><strong>One-tap daily attendance:</strong> Mark 30 students in under 10 seconds.</span>
+                </li>
+                <li>
+                  <span class="check-bubble">✓</span>
+                  <span><strong>Zero fee leakage:</strong> Instant live balance of who paid and who is due.</span>
+                </li>
+                <li>
+                  <span class="check-bubble">✓</span>
+                  <span><strong>1-click WhatsApp alerts:</strong> Polite fee reminders and absentee notices with zero typing.</span>
+                </li>
+                <li>
+                  <span class="check-bubble">✓</span>
+                  <span><strong>Encrypted cloud backup:</strong> Records safely stored and accessible only to you.</span>
+                </li>
+              </ul>
             </div>
 
+            <div style="margin-top:28px;">
+              <a href="#demo-modal" class="btn btn-primary open-demo-trigger">See How Easy It Is</a>
+            </div>
           </div>
 
         </div>
@@ -506,7 +468,7 @@
 
 
     <!-- =========================================================================
-         4. FEATURES SECTION (Realistic Mini UIs)
+         6. COMPREHENSIVE FEATURES SECTION (All 6 Features Preserved)
          ========================================================================= -->
     <section class="features-section" id="features">
       <div class="container">
@@ -519,7 +481,6 @@
           </p>
         </div>
 
-        <!-- Asymmetric Feature Showcase Blocks -->
         <div class="feature-blocks-container">
 
           <!-- Feature 1: Student and Batch Management -->
@@ -544,7 +505,7 @@
               <div class="mini-app-window">
                 <div class="mini-app-header">
                   <span class="mini-title">Active Batches & Student Directory</span>
-                  <span class="pill-badge">4 Batches Active</span>
+                  <span class="badge badge-violet">4 Batches Active</span>
                 </div>
                 <div class="mini-content-body">
                   <div class="batch-chip-row">
@@ -593,7 +554,7 @@
             </div>
           </div>
 
-          <!-- Feature 2: One-Tap Daily Attendance (Split Reversed) -->
+          <!-- Feature 2: One-Tap Daily Attendance -->
           <div class="feature-card-detailed reverse-layout">
             <div class="feature-text-side">
               <div class="feature-number-badge">02</div>
@@ -618,47 +579,40 @@
                   <span class="badge badge-success">28 of 30 Present</span>
                 </div>
                 <div class="mini-content-body">
-                  <div class="attendance-fast-row">
-                    <span class="meta-desc-line">Tap name to toggle absent. All students preset to Present.</span>
+                  <div class="attendance-fast-row" style="margin-bottom:12px; font-size:0.8rem; color:var(--text-muted);">
+                    <span>Tap name to toggle absent. All students preset to Present.</span>
                   </div>
                   <div class="attendance-mini-grid">
-                    
                     <div class="att-grid-card is-present">
                       <span class="att-num">1</span>
                       <span class="att-name">Aarav Sharma</span>
                       <span class="att-tag">P</span>
                     </div>
-
                     <div class="att-grid-card is-present">
                       <span class="att-num">2</span>
                       <span class="att-name">Priya Verma</span>
                       <span class="att-tag">P</span>
                     </div>
-
                     <div class="att-grid-card is-absent-highlight">
                       <span class="att-num">3</span>
                       <span class="att-name">Rohit Yadav</span>
                       <span class="att-tag tag-a">Absent</span>
                     </div>
-
                     <div class="att-grid-card is-present">
                       <span class="att-num">4</span>
                       <span class="att-name">Ananya Patel</span>
                       <span class="att-tag">P</span>
                     </div>
-
                     <div class="att-grid-card is-present">
                       <span class="att-num">5</span>
                       <span class="att-name">Kabir Mehta</span>
                       <span class="att-tag">P</span>
                     </div>
-
                     <div class="att-grid-card is-present">
                       <span class="att-num">6</span>
                       <span class="att-name">Sneha Kulkarni</span>
                       <span class="att-tag">P</span>
                     </div>
-
                   </div>
                   <div class="attendance-footer-stat">
                     <span>Batch Attendance Today: <strong>93.3%</strong></span>
@@ -695,7 +649,6 @@
                 </div>
                 <div class="mini-content-body">
                   <div class="fee-table-preview">
-                    
                     <div class="fee-row-item">
                       <div>
                         <strong>Aarav Sharma</strong>
@@ -739,12 +692,10 @@
                         <span class="badge badge-amber">Partial</span>
                       </div>
                     </div>
-
                   </div>
 
-                  <!-- Receipt Download preview bar -->
                   <div class="receipt-preview-bar">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
                     <span>Instant printable fee receipt with institute logo</span>
                   </div>
                 </div>
@@ -752,7 +703,7 @@
             </div>
           </div>
 
-          <!-- Feature 4 & 5: Test Marks, Progress Chart & Report Cards -->
+          <!-- Feature 4: Test Marks, Progress Chart & Report Cards -->
           <div class="feature-card-detailed reverse-layout">
             <div class="feature-text-side">
               <div class="feature-number-badge">04</div>
@@ -777,8 +728,6 @@
                   <span class="badge badge-info">Rank #1 in Class</span>
                 </div>
                 <div class="mini-content-body">
-                  
-                  <!-- Performance Chart using pure SVG -->
                   <div class="chart-box">
                     <div class="chart-title-line">
                       <span>Maths Test Scores (Last 5 Unit Tests)</span>
@@ -787,37 +736,31 @@
 
                     <div class="svg-chart-container">
                       <svg viewBox="0 0 360 140" class="performance-chart-svg" aria-label="Line chart showing marks increasing from 72% to 96%">
-                        <!-- Grid lines -->
-                        <line x1="30" y1="20" x2="340" y2="20" stroke="#EAE4DC" stroke-dasharray="3 3"/>
-                        <line x1="30" y1="60" x2="340" y2="60" stroke="#EAE4DC" stroke-dasharray="3 3"/>
-                        <line x1="30" y1="100" x2="340" y2="100" stroke="#EAE4DC" stroke-dasharray="3 3"/>
+                        <line x1="30" y1="20" x2="340" y2="20" stroke="rgba(124, 108, 240, 0.2)" stroke-dasharray="3 3"/>
+                        <line x1="30" y1="60" x2="340" y2="60" stroke="rgba(124, 108, 240, 0.2)" stroke-dasharray="3 3"/>
+                        <line x1="30" y1="100" x2="340" y2="100" stroke="rgba(124, 108, 240, 0.2)" stroke-dasharray="3 3"/>
                         
-                        <!-- Y Axis labels -->
                         <text x="5" y="24" class="chart-axis-text">100%</text>
                         <text x="12" y="64" class="chart-axis-text">75%</text>
                         <text x="12" y="104" class="chart-axis-text">50%</text>
 
-                        <!-- Area fill -->
-                        <polygon points="50,96 115,80 185,55 255,40 325,24 325,110 50,110" fill="rgba(19, 57, 38, 0.08)"/>
+                        <polygon points="50,96 115,80 185,55 255,40 325,24 325,110 50,110" fill="rgba(124, 108, 240, 0.12)"/>
+                        <polyline points="50,96 115,80 185,55 255,40 325,24" fill="none" stroke="#7C6CF0" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
 
-                        <!-- Line path -->
-                        <polyline points="50,96 115,80 185,55 255,40 325,24" fill="none" stroke="#133926" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-
-                        <!-- Data dots & labels -->
-                        <circle cx="50" cy="96" r="4.5" fill="#133926"/>
+                        <circle cx="50" cy="96" r="4.5" fill="#7C6CF0"/>
                         <text x="50" y="125" text-anchor="middle" class="chart-point-label">Test 1 (72%)</text>
 
-                        <circle cx="115" cy="80" r="4.5" fill="#133926"/>
+                        <circle cx="115" cy="80" r="4.5" fill="#7C6CF0"/>
                         <text x="115" y="125" text-anchor="middle" class="chart-point-label">Test 2 (78%)</text>
 
-                        <circle cx="185" cy="55" r="4.5" fill="#133926"/>
+                        <circle cx="185" cy="55" r="4.5" fill="#7C6CF0"/>
                         <text x="185" y="125" text-anchor="middle" class="chart-point-label">Test 3 (85%)</text>
 
-                        <circle cx="255" cy="40" r="4.5" fill="#133926"/>
+                        <circle cx="255" cy="40" r="4.5" fill="#7C6CF0"/>
                         <text x="255" y="125" text-anchor="middle" class="chart-point-label">Test 4 (91%)</text>
 
-                        <circle cx="325" cy="24" r="5" fill="#C85A17"/>
-                        <text x="325" y="125" text-anchor="middle" class="chart-point-label chart-accent-text">Test 5 (96%)</text>
+                        <circle cx="325" cy="24" r="5.5" fill="#E25BD0"/>
+                        <text x="325" y="125" text-anchor="middle" class="chart-point-label" style="fill:#E25BD0;">Test 5 (96%)</text>
                       </svg>
                     </div>
                   </div>
@@ -827,16 +770,14 @@
                     <span class="report-pill">✓ Homework: Consistent</span>
                     <span class="download-link">Print Report Card →</span>
                   </div>
-
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- Feature 6 & 7: Parent Alerts & Weak Student Flagging (Side-by-side Grid) -->
+          <!-- Sub-features 5 & 6: Respectful Parent Alerts & Early Attention -->
           <div class="sub-features-grid">
             
-            <!-- Parent WhatsApp Alert -->
             <div class="sub-feature-card">
               <div class="sub-card-header">
                 <div class="feature-number-badge badge-sm">05</div>
@@ -846,7 +787,6 @@
                 </div>
               </div>
 
-              <!-- Phone Screen Mockup -->
               <div class="phone-chat-screen">
                 <div class="chat-header">
                   <div class="chat-avatar">AD</div>
@@ -870,7 +810,6 @@
               </div>
             </div>
 
-            <!-- Weak Student Flagging -->
             <div class="sub-feature-card">
               <div class="sub-card-header">
                 <div class="feature-number-badge badge-sm">06</div>
@@ -881,10 +820,9 @@
               </div>
 
               <div class="alerts-list-ui">
-                
                 <div class="attention-card alert-danger">
                   <div class="att-alert-icon">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
                   </div>
                   <div class="att-alert-info">
                     <strong>Rohit Yadav • Attendance dropped to 68%</strong>
@@ -895,7 +833,7 @@
 
                 <div class="attention-card alert-warning">
                   <div class="att-alert-icon">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
                   </div>
                   <div class="att-alert-info">
                     <strong>Kabir Mehta • Test marks decline</strong>
@@ -908,7 +846,6 @@
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
                   <span>Helps you take action early, before parents raise concerns.</span>
                 </div>
-
               </div>
             </div>
 
@@ -921,68 +858,73 @@
 
 
     <!-- =========================================================================
-         5. INTERACTIVE LIVE DEMO SECTION (Key Moment for the Client)
+         7. INTERACTIVE LIVE DEMO PLAYGROUND
          ========================================================================= -->
     <section class="interactive-demo-section" id="interactive-demo">
       <div class="container">
         
         <div class="interactive-card">
-          
-          <div class="interactive-header text-center">
-            <span class="sub-badge accent-badge">Hands-On Experience</span>
-            <h2 class="section-title">
-              Try it yourself right now.
-              <span class="underline-ink">Tap and see.</span>
-            </h2>
+          <div class="interactive-header">
+            <span class="sub-badge">Hands-On Experience</span>
+            <h2 class="section-title">Try it yourself right now</h2>
             <p class="section-lead">
-              Experience how fast ClassDesk feels on your own screen. Tap any student below to toggle their attendance, or collect a fee to watch totals update live.
+              Tap buttons below to test marking real attendance or collecting student fees. See how fast and effortless ClassDesk is on your screen.
             </p>
           </div>
 
-          <!-- Interactive Tabs Switcher -->
-          <div class="demo-tabs-bar" role="tablist" aria-label="Demo interactive modes">
-            <button class="demo-tab-btn active" id="tabAttendanceBtn" role="tab" aria-selected="true" aria-controls="tabAttendanceContent">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><polyline points="17 11 19 13 23 9"></polyline></svg>
-              <span>1. Take Daily Attendance (10-Sec Demo)</span>
+          <!-- Interactive Simulator Tab Navigation -->
+          <div class="interactive-tabs-nav" role="tablist" aria-label="Interactive Demo Switcher">
+            <button class="tab-pill-btn active" id="tabAttendanceBtn" role="tab" aria-selected="true" aria-controls="tabAttendanceContent">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>1. Attendance Simulator</span>
             </button>
-            <button class="demo-tab-btn" id="tabFeeBtn" role="tab" aria-selected="false" aria-controls="tabFeeContent">
+            <button class="tab-pill-btn" id="tabFeeBtn" role="tab" aria-selected="false" aria-controls="tabFeeContent">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
-              <span>2. Collect Monthly Fees & Dues</span>
+              <span>2. Fee Collection Simulator</span>
             </button>
           </div>
 
-          <!-- Tab 1: Live Interactive Attendance Simulator -->
+          <!-- Tab 1: Live Attendance Simulator -->
           <div class="tab-pane active" id="tabAttendanceContent" role="tabpanel" aria-labelledby="tabAttendanceBtn">
             
             <div class="simulator-hud">
+              <!-- Circular Progress Ring HUD item -->
+              <div class="hud-ring-wrap">
+                <svg class="svg-circle-ring" viewBox="0 0 36 36">
+                  <path class="ring-bg" stroke-width="3.5" fill="none" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                  <path class="ring-fill" id="attendanceProgressRing" stroke-dasharray="83.3, 100" stroke-width="3.5" fill="none" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                </svg>
+                <div class="hud-stat">
+                  <span class="hud-label">Today's Attendance</span>
+                  <span class="hud-val text-success" id="liveAttendancePercent">83.3%</span>
+                </div>
+              </div>
+
               <div class="hud-stat">
-                <span class="hud-label">Present Today</span>
+                <span class="hud-label">Students Present</span>
                 <span class="hud-val text-success" id="livePresentCount">5 / 6</span>
               </div>
+
               <div class="hud-stat">
-                <span class="hud-label">Absent</span>
-                <span class="hud-val text-danger" id="liveAbsentCount">1</span>
-              </div>
-              <div class="hud-stat">
-                <span class="hud-label">Attendance Rate</span>
-                <span class="hud-val text-brand" id="liveAttendancePercent">83.3%</span>
-              </div>
-              <div class="hud-actions">
-                <button class="btn btn-outline-sm" id="btnMarkAllPresent">Reset All to Present</button>
+                <span class="hud-label">Students Absent</span>
+                <span class="hud-val text-amber" id="liveAbsentCount">1</span>
               </div>
             </div>
 
-            <p class="sim-instruction-note">
-              👉 <strong>Teacher Tip:</strong> Everyone is Present by default. Tap on any student's status button to mark them Absent. Watch the percentages update instantly.
-            </p>
-
-            <div class="interactive-student-list" id="interactiveAttendanceList">
-              <!-- Rendered dynamically by script.js with student toggles -->
+            <div class="sim-instructions-bar">
+              <span>👉 Tap any student's button to switch between <strong>Present</strong> and <strong>Absent</strong>:</span>
+              <button type="button" class="btn-ghost-reset" id="btnMarkAllPresent">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Mark All Present</span>
+              </button>
             </div>
+
+            <!-- Dynamic interactive student list injected by script.js -->
+            <div class="sim-list-container" id="interactiveAttendanceList"></div>
 
             <div class="sim-completion-bar" id="attendanceToast">
               <div class="toast-content">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#133926" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
                 <span id="toastMessage">Attendance recorded for 6 students in 3 seconds!</span>
               </div>
               <a href="#demo-modal" class="btn btn-primary btn-sm open-demo-trigger">Get This For Your Coaching</a>
@@ -990,7 +932,7 @@
 
           </div>
 
-          <!-- Tab 2: Live Interactive Fee Collection Simulator -->
+          <!-- Tab 2: Live Fee Collection Simulator -->
           <div class="tab-pane" id="tabFeeContent" role="tabpanel" aria-labelledby="tabFeeBtn" hidden>
             
             <div class="simulator-hud">
@@ -998,33 +940,41 @@
                 <span class="hud-label">Total Monthly Target</span>
                 <span class="hud-val text-muted" id="liveFeeTarget">₹9,000</span>
               </div>
+
               <div class="hud-stat">
                 <span class="hud-label">Collected So Far</span>
                 <span class="hud-val text-success" id="liveFeeCollected">₹6,000</span>
               </div>
+
               <div class="hud-stat">
                 <span class="hud-label">Pending Dues</span>
                 <span class="hud-val text-amber" id="liveFeePending">₹3,000</span>
               </div>
-              <div class="hud-actions">
-                <button class="btn btn-outline-sm" id="btnResetFees">Reset Fee Demo</button>
+
+              <div class="fee-progress-hud-bar">
+                <div class="fee-bar-track">
+                  <div class="fee-bar-fill" id="feeProgressFill"></div>
+                </div>
               </div>
             </div>
 
-            <p class="sim-instruction-note">
-              👉 <strong>Teacher Tip:</strong> Tap <strong>"Collect ₹1,500"</strong> on any pending student. Watch how the total collected amount increases and pending dues clear automatically.
-            </p>
-
-            <div class="interactive-student-list" id="interactiveFeeList">
-              <!-- Rendered dynamically by script.js with fee toggles -->
+            <div class="sim-instructions-bar">
+              <span>👉 Tap <strong>"Collect Fee"</strong> to issue an instant receipt and update pending balance:</span>
+              <button type="button" class="btn-ghost-reset" id="btnResetFees">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="1 4 1 10 7 10"></polyline><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"></path></svg>
+                <span>Reset Demo</span>
+              </button>
             </div>
+
+            <!-- Dynamic interactive fee list injected by script.js -->
+            <div class="sim-list-container" id="interactiveFeeList"></div>
 
             <div class="sim-completion-bar fee-toast-bar">
               <div class="toast-content">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C85A17" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
                 <span id="feeToastMessage">Receipt automatically numbered & saved for download.</span>
               </div>
-              <a href="#demo-modal" class="btn btn-accent btn-sm open-demo-trigger">Setup Your Fee Structure</a>
+              <a href="#demo-modal" class="btn btn-primary btn-sm open-demo-trigger">Setup Your Fee Structure</a>
             </div>
 
           </div>
@@ -1036,7 +986,7 @@
 
 
     <!-- =========================================================================
-         6. HOW IT WORKS (3 Simple Steps)
+         8. HOW IT WORKS (3 Simple Steps)
          ========================================================================= -->
     <section class="how-it-works-section" id="how-it-works">
       <div class="container">
@@ -1045,37 +995,34 @@
           <span class="sub-badge">Simple 3-Step Setup</span>
           <h2 class="section-title">How you get started</h2>
           <p class="section-lead">
-            You do not need an IT technician. You can start using this on your phone today.
+            No long onboarding, no installations, and no complicated setup. You can be running your first batch in under 15 minutes.
           </p>
         </div>
 
         <div class="steps-grid">
           
           <div class="step-card">
-            <div class="step-num-circle">1</div>
+            <div class="step-number-badge">1</div>
             <h3 class="step-title">Add your batches and students</h3>
             <p class="step-desc">
-              Create your batches (for example: "Class 10 Maths - 4:00 PM") and enter your student names. If you prefer, simply send us a photo of your register, and we will set them up for you.
+              Enter your student names and batch timings on your mobile. Or simply send photos of your existing register pages to our support team and we will upload them for you for free.
             </p>
-            <div class="step-tag">Takes 10 minutes</div>
           </div>
 
           <div class="step-card">
-            <div class="step-num-circle">2</div>
+            <div class="step-number-badge">2</div>
             <h3 class="step-title">Mark attendance & log marks</h3>
             <p class="step-desc">
-              Open the app on your mobile phone when class starts. Tap absent students in 10 seconds. When you conduct tests, type the marks to see ranks and percentages instantly.
+              Open the app when your batch starts. Tap only absent students. Whenever you conduct a unit test, type student marks once to automatically generate batch rankings.
             </p>
-            <div class="step-tag">Daily 10-second habit</div>
           </div>
 
           <div class="step-card">
-            <div class="step-num-circle">3</div>
+            <div class="step-number-badge">3</div>
             <h3 class="step-title">Track fees and show reports</h3>
             <p class="step-desc">
-              See who has pending fees at any moment and send WhatsApp reminders in one click. Hand clean printable report cards to parents whenever they visit for meetings.
+              See who has paid and who owes fees at a single glance. Send friendly 1-click WhatsApp reminders to parents and share student progress report cards anytime.
             </p>
-            <div class="step-tag">Zero paper headaches</div>
           </div>
 
         </div>
@@ -1085,7 +1032,7 @@
 
 
     <!-- =========================================================================
-         7. BEFORE VS AFTER COMPARISON
+         9. BEFORE VS AFTER COMPARISON
          ========================================================================= -->
     <section class="comparison-section" id="comparison">
       <div class="container">
@@ -1197,7 +1144,7 @@
 
 
     <!-- =========================================================================
-         8. COMING NEXT (Future Add-Ons / Roadmap)
+         10. ROADMAP / COMING NEXT (Future Add-Ons)
          ========================================================================= -->
     <section class="roadmap-section" id="roadmap">
       <div class="container">
@@ -1213,39 +1160,35 @@
         <div class="roadmap-grid">
           
           <div class="roadmap-card">
-            <div class="roadmap-icon">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
+            <div>
+              <span class="roadmap-status-badge badge-success">Live Now</span>
+              <h3 class="roadmap-title">Student & Parent Mobile Login</h3>
+              <p class="roadmap-desc">Give parents a secure view to check their child's daily attendance and upcoming unit tests on their phone.</p>
             </div>
-            <h3 class="roadmap-title">Student & Parent Mobile Login</h3>
-            <p class="roadmap-desc">Give parents a private login to check their child's daily attendance and upcoming test schedules on their own phones.</p>
-            <span class="roadmap-status">Optional Add-On</span>
           </div>
 
           <div class="roadmap-card">
-            <div class="roadmap-icon">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"></rect><line x1="2" y1="10" x2="22" y2="10"></line></svg>
+            <div>
+              <span class="roadmap-status-badge badge-violet">Coming Soon</span>
+              <h3 class="roadmap-title">Direct UPI Fee Payments</h3>
+              <p class="roadmap-desc">Allow parents to pay monthly coaching fees directly via Google Pay or PhonePe with automatic receipt generation.</p>
             </div>
-            <h3 class="roadmap-title">Direct UPI Fee Payments</h3>
-            <p class="roadmap-desc">Send payment links via WhatsApp. When parents pay via UPI or QR code, the fee is automatically marked as paid in your ledger.</p>
-            <span class="roadmap-status">Optional Add-On</span>
           </div>
 
           <div class="roadmap-card">
-            <div class="roadmap-icon">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="12" y1="18" x2="12" y2="12"></line><line x1="9" y1="15" x2="15" y2="15"></line></svg>
+            <div>
+              <span class="roadmap-status-badge badge-warning">Planned</span>
+              <h3 class="roadmap-title">Homework & Notes Upload</h3>
+              <p class="roadmap-desc">Share PDF lecture notes, practice question sets, and formula sheets directly with all enrolled batch students.</p>
             </div>
-            <h3 class="roadmap-title">Homework & Notes Upload</h3>
-            <p class="roadmap-desc">Upload PDF assignment sheets and class notes so students who missed a class can download the materials directly.</p>
-            <span class="roadmap-status">Optional Add-On</span>
           </div>
 
           <div class="roadmap-card">
-            <div class="roadmap-icon">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+            <div>
+              <span class="roadmap-status-badge badge-warning">Planned</span>
+              <h3 class="roadmap-title">Institute Expense Tracker</h3>
+              <p class="roadmap-desc">Log classroom rent, teacher salaries, and electricity bills to know your exact coaching profit every month.</p>
             </div>
-            <h3 class="roadmap-title">Institute Expense Tracker</h3>
-            <p class="roadmap-desc">Track classroom rent, assistant teacher salaries, electricity, and photocopy printing bills to know your exact monthly profit.</p>
-            <span class="roadmap-status">Optional Add-On</span>
           </div>
 
         </div>
@@ -1255,22 +1198,85 @@
 
 
     <!-- =========================================================================
-         9. FREQUENTLY ASKED QUESTIONS (Accordion)
+         11. MID-PAGE VIOLET CTA BANNER (With Tilted Phone Mockup)
+         ========================================================================= -->
+    <section class="mid-cta-banner-wrap" aria-label="Quick Action Banner">
+      <div class="container">
+        <div class="violet-cta-banner">
+          
+          <div class="banner-content">
+            <span class="sub-badge" style="background:rgba(255,255,255,0.2); color:#FFFFFF; border-color:rgba(255,255,255,0.3);">Get Started Today</span>
+            <h2>Ready to put away your paper registers?</h2>
+            <p>
+              Experience the clarity of managing your entire coaching academy from your phone. Set up in 15 minutes with complete support.
+            </p>
+            <div class="banner-actions">
+              <a href="#demo-modal" class="btn btn-magenta btn-lg open-demo-trigger">Request Free Demo Call</a>
+              <a href="#" class="btn btn-whatsapp btn-lg" data-config-whatsapp target="_blank" rel="noopener">Chat on WhatsApp</a>
+            </div>
+          </div>
+
+          <!-- Tilted 3D CSS Phone Mockup -->
+          <div class="banner-mockup-side">
+            <div class="tilted-phone-frame">
+              <div class="tilted-screen">
+                <span style="font-size:0.75rem; font-weight:700; color:#7C6CF0;">ClassDesk Live Screen</span>
+                <div class="tilted-card-mini">
+                  <strong>₹1,42,500 Collected</strong>
+                  <span style="color:#10B981; font-weight:700;">✓ 28 Paid on time</span>
+                </div>
+                <div class="tilted-card-mini" style="border-left:3px solid #F59E0B;">
+                  <strong>Rohit Yadav • Due ₹1,500</strong>
+                  <span style="color:#F59E0B; font-weight:600;">1-Tap WhatsApp sent</span>
+                </div>
+                <div class="tilted-card-mini" style="background:#EEECFE;">
+                  <strong>Unit Test 5 Result Ready</strong>
+                  <span style="color:#7C6CF0; font-weight:600;">Aarav: 48/50 (Rank #1)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =========================================================================
+         12. HIGH-TRUST STATEMENT / TESTIMONIAL BLOCK (No Fake Social Proof)
+         ========================================================================= -->
+    <section class="trust-statement-section" aria-label="Trust Statement">
+      <div class="container">
+        <div class="quote-trust-card">
+          <svg class="quote-icon" width="40" height="40" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+          </svg>
+          <p class="quote-lead-text">
+            "We built ClassDesk specifically so coaching owners and tuition teachers can focus on teaching rather than spending evenings counting fee receipts and roll calls."
+          </p>
+          <span class="quote-author">Built for Coaching Institutes, Tuition Centers & Academies</span>
+          <!-- TODO: add real client testimonial quote when received -->
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =========================================================================
+         13. FREQUENTLY ASKED QUESTIONS (All 6 FAQs Preserved)
          ========================================================================= -->
     <section class="faq-section" id="faq">
-      <div class="container faq-container">
+      <div class="container">
         
         <div class="section-header text-center">
-          <span class="sub-badge">Clear Answers</span>
-          <h2 class="section-title">Frequently Asked Questions</h2>
+          <span class="sub-badge">Common Questions</span>
+          <h2 class="section-title">Everything you need to know</h2>
           <p class="section-lead">
-            Every teacher asks these practical questions before making the switch.
+            Here are honest, clear answers to the most common questions teachers ask us before getting started.
           </p>
         </div>
 
-        <div class="accordion" id="faqAccordion">
-
-          <!-- Question 1 -->
+        <div class="faq-accordion" id="faqAccordion">
+          
           <div class="faq-item">
             <button class="faq-trigger" aria-expanded="false" aria-controls="faq-ans-1" id="faq-q-1">
               <span class="faq-question">Do I need computer knowledge to use this?</span>
@@ -1285,7 +1291,6 @@
             </div>
           </div>
 
-          <!-- Question 2 -->
           <div class="faq-item">
             <button class="faq-trigger" aria-expanded="false" aria-controls="faq-ans-2" id="faq-q-2">
               <span class="faq-question">Does it work on my regular mobile phone?</span>
@@ -1300,7 +1305,6 @@
             </div>
           </div>
 
-          <!-- Question 3 -->
           <div class="faq-item">
             <button class="faq-trigger" aria-expanded="false" aria-controls="faq-ans-3" id="faq-q-3">
               <span class="faq-question">Is my student data and fee information safe?</span>
@@ -1315,7 +1319,6 @@
             </div>
           </div>
 
-          <!-- Question 4 -->
           <div class="faq-item">
             <button class="faq-trigger" aria-expanded="false" aria-controls="faq-ans-4" id="faq-q-4">
               <span class="faq-question">Can I create my own custom batches and fee amounts?</span>
@@ -1330,7 +1333,6 @@
             </div>
           </div>
 
-          <!-- Question 5 -->
           <div class="faq-item">
             <button class="faq-trigger" aria-expanded="false" aria-controls="faq-ans-5" id="faq-q-5">
               <span class="faq-question">Can parents see marks and attendance?</span>
@@ -1345,7 +1347,6 @@
             </div>
           </div>
 
-          <!-- Question 6 -->
           <div class="faq-item">
             <button class="faq-trigger" aria-expanded="false" aria-controls="faq-ans-6" id="faq-q-6">
               <span class="faq-question">Can I move my existing students from my current registers?</span>
@@ -1367,91 +1368,78 @@
 
 
     <!-- =========================================================================
-         10. FINAL CALL TO ACTION BLOCK
+         14. CONTACT / DEMO REQUEST SECTION (#contact)
          ========================================================================= -->
     <section class="final-cta-section" id="contact">
       <div class="container">
         
-        <div class="cta-banner-card">
-          <div class="cta-content-column">
-            
-            <span class="cta-badge">Zero Risk • 15-Minute Setup</span>
-            <h2 class="cta-title">
-              Bring your paper register. We will show you how it looks on your phone.
-            </h2>
-            <p class="cta-desc">
-              No software installation, no credit card required, and no commitment. We will walk you through a friendly 15-minute demonstration using your own batches.
+        <div class="contact-split-grid">
+          
+          <div class="contact-info-side">
+            <span class="sub-badge">Get in Touch</span>
+            <h2>Let us show you ClassDesk with your own batches</h2>
+            <p>
+              No pressure and no commitments. We will give you a personalized 15-minute walkthrough showing how your actual classes, attendance, and fee dues look on your phone screen.
             </p>
 
-            <div class="cta-buttons-row">
-              <a href="#" class="btn btn-whatsapp btn-lg" data-config-whatsapp target="_blank" rel="noopener">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.456 5.711 1.456h.005c6.554 0 11.89-5.336 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-                <span>Message on WhatsApp</span>
-              </a>
-
-              <a href="#" class="btn btn-secondary-light btn-lg" data-config-call>
+            <div class="direct-contact-pills">
+              <a href="#" class="contact-pill-item" data-config-call>
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-                <span>Call Directly: <span data-config="phoneNumber">+91 98765 43210</span></span>
+                <span>Call Us Directly: <strong data-config="phoneNumber">+91 98765 43210</strong></span>
               </a>
-            </div>
 
-            <div class="cta-guarantees">
-              <span>✓ Free 14-day evaluation</span>
-              <span>✓ Free data upload from register photos</span>
-              <span>✓ Personal support over phone</span>
-            </div>
+              <a href="#" class="contact-pill-item" data-config-whatsapp target="_blank" rel="noopener">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="#25D366" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.456 5.711 1.456h.005c6.554 0 11.89-5.336 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                <span>Chat Instantly on WhatsApp</span>
+              </a>
 
+              <div class="contact-pill-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                <span>Email: <strong data-config="supportEmail">contact@classdesk.in</strong></span>
+              </div>
+            </div>
           </div>
 
-          <!-- Quick Request Card Form -->
-          <div class="cta-form-column">
-            <div class="simple-demo-form-card">
-              <h3 class="form-card-title">Book a 15-Minute Demo</h3>
-              <p class="form-card-sub">Leave your details and we will call you at your preferred time.</p>
-
-              <form id="landingDemoForm" novalidate>
-                <div class="form-group">
-                  <label for="teacherName">Your Name</label>
-                  <input type="text" id="teacherName" name="name" placeholder="e.g. Ramesh Kumar" required>
-                </div>
-
-                <div class="form-group">
-                  <label for="coachingName">Coaching / Tuition Name</label>
-                  <input type="text" id="coachingName" name="coaching" placeholder="e.g. Kumar Classes" required>
-                </div>
-
-                <div class="form-group">
-                  <label for="teacherPhone">Mobile Number (WhatsApp)</label>
-                  <input type="tel" id="teacherPhone" name="phone" placeholder="e.g. 98765 43210" pattern="[0-9]{10}" required>
-                </div>
-
-                <div class="form-group">
-                  <label for="preferredTime">Best Time to Call</label>
-                  <select id="preferredTime" name="preferredTime">
-                    <option value="morning">Morning (10:00 AM - 1:00 PM)</option>
-                    <option value="afternoon">Afternoon (1:00 PM - 4:00 PM)</option>
-                    <option value="evening" selected>Evening (After 6:00 PM)</option>
-                  </select>
-                </div>
-
-                <button type="submit" class="btn btn-primary btn-block btn-lg" id="submitDemoBtn">
-                  <span>Schedule Free Demo</span>
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-                </button>
-
-                <p class="form-privacy-note">We never share your number or send spam messages.</p>
-              </form>
-
-              <!-- Success Notification state -->
-              <div class="form-success-state" id="formSuccessState" hidden>
-                <div class="success-icon-wrap">
-                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#133926" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
-                </div>
-                <h4 class="success-heading">Demo Request Received!</h4>
-                <p class="success-text">Thank you. We will call you shortly to show you how ClassDesk simplifies your coaching registers.</p>
-                <a href="#" class="btn btn-whatsapp btn-block" data-config-whatsapp target="_blank" rel="noopener">Continue on WhatsApp</a>
+          <div class="contact-form-side">
+            <form id="landingDemoForm" novalidate>
+              <div class="form-group">
+                <label for="teacherName">Your Name</label>
+                <input type="text" id="teacherName" name="teacherName" required placeholder="e.g. Ramesh Kumar">
               </div>
 
+              <div class="form-group">
+                <label for="coachingName">Coaching / Academy Name</label>
+                <input type="text" id="coachingName" name="coachingName" required placeholder="e.g. Kumar Classes">
+              </div>
+
+              <div class="form-group">
+                <label for="teacherPhone">WhatsApp Mobile Number</label>
+                <input type="tel" id="teacherPhone" name="teacherPhone" required placeholder="e.g. 98765 43210">
+              </div>
+
+              <div class="form-group">
+                <label for="preferredTime">Best Time to Call</label>
+                <select id="preferredTime" name="preferredTime">
+                  <option value="morning">Morning (9:00 AM – 12:00 PM)</option>
+                  <option value="afternoon">Afternoon (1:00 PM – 4:00 PM)</option>
+                  <option value="evening" selected>Evening (5:00 PM – 8:00 PM)</option>
+                </select>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block btn-lg">
+                <span>Request Free Demo Call</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </button>
+            </form>
+
+            <div class="form-success-state" id="formSuccessState" hidden>
+              <div class="success-icon-wrap">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+              </div>
+              <h3 style="font-size:1.35rem; margin-bottom:8px;">Thank You!</h3>
+              <p style="color:var(--text-body); font-size:0.95rem;">
+                We have received your request. Opening WhatsApp to connect with you directly...
+              </p>
             </div>
           </div>
 
@@ -1464,26 +1452,46 @@
 
 
   <!-- =========================================================================
-       11. MINIMAL PROFESSIONAL FOOTER
+       15. STICKY MOBILE BOTTOM ACTION BAR
+       ========================================================================= -->
+  <aside class="mobile-sticky-bar" id="mobileStickyBar" aria-label="Quick Actions">
+    <a href="#" class="btn btn-secondary btn-sm" data-config-call>
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+      <span>Call</span>
+    </a>
+    <a href="#" class="btn btn-whatsapp btn-sm" data-config-whatsapp target="_blank" rel="noopener">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.456 5.711 1.456h.005c6.554 0 11.89-5.336 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      <span>WhatsApp</span>
+    </a>
+    <a href="#demo-modal" class="btn btn-primary btn-sm open-demo-trigger">
+      <span>Get Demo</span>
+    </a>
+  </aside>
+
+
+  <!-- =========================================================================
+       16. FOOTER
        ========================================================================= -->
   <footer class="site-footer">
-    <div class="container footer-container">
+    <div class="container">
       
-      <div class="footer-top-row">
-        <div class="footer-brand">
-          <div class="footer-logo">
+      <div class="footer-top-grid">
+        <div class="footer-brand-col">
+          <a href="#hero" class="brand-logo" aria-label="ClassDesk Home">
             <span class="logo-mark">
-              <svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <rect width="28" height="28" rx="6" fill="#FAF7F2"/>
-                <path d="M7 6H21C22.1046 6 23 6.89543 23 8V20C23 21.1046 22.1046 22 21 22H7V6Z" fill="#133926"/>
-                <rect x="7" y="6" width="3.5" height="16" fill="#C85A17"/>
-                <path d="M13 11H19M13 14.5H19M13 18H16.5" stroke="#FAF7F2" stroke-width="1.6" stroke-linecap="round"/>
+              <svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" width="20" height="20" aria-hidden="true">
+                <rect width="28" height="28" rx="7" fill="currentColor"/>
+                <path d="M7 6H21C22.1046 6 23 6.89543 23 8V20C23 21.1046 22.1046 22 21 22H7V6Z" fill="#FAF8FF"/>
+                <rect x="7" y="6" width="3.5" height="16" fill="#E25BD0"/>
+                <path d="M13 11H19M13 14.5H19M13 18H16.5" stroke="#7C6CF0" stroke-width="1.8" stroke-linecap="round"/>
               </svg>
             </span>
-            <strong class="footer-brand-name product-name-text">ClassDesk</strong>
-          </div>
-          <p class="footer-tagline">
-            Simple, reliable coaching management designed for teachers and tuition institutes.
+            <span class="logo-text">
+              <strong class="product-name-text">ClassDesk</strong>
+            </span>
+          </a>
+          <p>
+            Simple, respectful coaching management for teachers, tuition classes, and academies. Track attendance, fees, and marks on your mobile.
           </p>
         </div>
 
@@ -1491,7 +1499,7 @@
           <span class="footer-col-title">Navigation</span>
           <ul>
             <li><a href="#features">Features</a></li>
-            <li><a href="#interactive-demo">Interactive Demo</a></li>
+            <li><a href="#interactive-demo">Try Live Demo</a></li>
             <li><a href="#how-it-works">How It Works</a></li>
             <li><a href="#comparison">Paper vs Software</a></li>
             <li><a href="#faq">Questions & Answers</a></li>
@@ -1514,7 +1522,7 @@
           © <span id="currentYear">2026</span> <span class="product-name-text">ClassDesk</span>. All rights reserved.
         </p>
         <p class="creator-credit">
-          Crafted with care for educators by <strong data-config="creatorName">VK Design & Web Studio</strong>.
+          Crafted with care by <strong data-config="creatorName">VK Design & Web Studio</strong>
         </p>
       </div>
 
@@ -1523,12 +1531,12 @@
 
 
   <!-- =========================================================================
-       DEMO MODAL DIALOG (Accessible)
+       17. DEMO MODAL DIALOG (Accessible & Centered)
        ========================================================================= -->
   <div class="modal-backdrop is-hidden" id="demoModalBackdrop" hidden style="display: none;">
     <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
       <button type="button" class="modal-close-btn" id="modalCloseBtn" aria-label="Close dialog">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
       </button>
 
       <div class="modal-body">
@@ -1566,7 +1574,7 @@
           <span>Chat on WhatsApp Directly</span>
         </a>
 
-        <div class="modal-success-msg" id="modalSuccessMsg" hidden>
+        <div class="modal-success-msg" id="modalSuccessMsg" hidden style="display:none;">
           <p>✓ Thank you! We received your demo request. Opening WhatsApp to connect with you...</p>
         </div>
       </div>

@@ -15,3 +15,4 @@ A modern, responsive landing page and web application for coaching institutes, t
 
 ## 🌐 Live Deployment
 Hosted on Vercel.
+

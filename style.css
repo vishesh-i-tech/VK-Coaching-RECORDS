@@ -4,7 +4,7 @@
  * ============================================================================
  * Visual language adapted from modern task-manager SaaS reference ("Mutmiz").
  * Palette: Soft Lavender (#F4F2FF) + Electric Violet (#7C6CF0) + Deep Ink (#1E1B4B) + Magenta (#E25BD0)
- * Fully responsive, accessible, dark-mode supported.
+ * 100% Fully Responsive (320px → 1440px+), Accessible, Pure Violet Light Theme.
  */
 
 /* ============================================================================
@@ -14,10 +14,10 @@
   --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   --font-display: 'Outfit', 'Plus Jakarta Sans', system-ui, sans-serif;
 
-  /* --- LIGHT MODE PALETTE (Default) --- */
+  /* --- PURE VIOLET LIGHT PALETTE --- */
   --bg-page: #F4F2FF;
   --bg-page-subtle: #ECE8FD;
-  --bg-card: rgba(255, 255, 255, 0.90);
+  --bg-card: rgba(255, 255, 255, 0.92);
   --bg-card-solid: #FFFFFF;
   --bg-card-subtle: #FAF8FF;
   
@@ -26,7 +26,7 @@
   --primary-violet-dark: #5544D4;
   --primary-violet-light: #EEECFE;
   --primary-violet-subtle: rgba(124, 108, 240, 0.10);
-  --primary-violet-border: rgba(124, 108, 240, 0.18);
+  --primary-violet-border: rgba(124, 108, 240, 0.20);
 
   --accent-magenta: #E25BD0;
   --accent-magenta-hover: #CF45BD;
@@ -36,7 +36,7 @@
   --gradient-violet-banner: linear-gradient(135deg, #7C6CF0 0%, #5846DC 100%);
   --gradient-magenta: linear-gradient(135deg, #F472D0 0%, #E25BD0 100%);
   --gradient-magenta-hover: linear-gradient(135deg, #FA83DA 0%, #CF45BD 100%);
-  --gradient-card: linear-gradient(180deg, rgba(255, 255, 255, 0.95) 0%, rgba(250, 248, 255, 0.85) 100%);
+  --gradient-card: linear-gradient(180deg, rgba(255, 255, 255, 0.95) 0%, rgba(250, 248, 255, 0.90) 100%);
   --gradient-glow: radial-gradient(circle at 50% 50%, rgba(124, 108, 240, 0.18) 0%, rgba(244, 242, 255, 0) 70%);
 
   /* Typography Colors */
@@ -48,7 +48,7 @@
   /* Borders & Dividers */
   --border-light: rgba(124, 108, 240, 0.12);
   --border-medium: rgba(124, 108, 240, 0.22);
-  --border-glass: rgba(255, 255, 255, 0.80);
+  --border-glass: rgba(255, 255, 255, 0.85);
 
   /* Functional Status Colors */
   --color-success: #10B981;
@@ -88,42 +88,6 @@
   --transition-normal: 0.28s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-/* --- DARK THEME OVERRIDES --- */
-[data-theme="dark"] {
-  --bg-page: #0D0B1C;
-  --bg-page-subtle: #14112B;
-  --bg-card: rgba(26, 22, 54, 0.88);
-  --bg-card-solid: #1B173B;
-  --bg-card-subtle: #211C47;
-
-  --primary-violet: #8E7CFF;
-  --primary-violet-hover: #A192FF;
-  --primary-violet-dark: #6A5AE0;
-  --primary-violet-light: #25204F;
-  --primary-violet-subtle: rgba(142, 124, 255, 0.15);
-  --primary-violet-border: rgba(142, 124, 255, 0.25);
-
-  --gradient-card: linear-gradient(180deg, rgba(28, 24, 58, 0.95) 0%, rgba(20, 17, 43, 0.85) 100%);
-  --gradient-glow: radial-gradient(circle at 50% 50%, rgba(142, 124, 255, 0.16) 0%, rgba(13, 11, 28, 0) 70%);
-
-  --text-heading: #FAF8FF;
-  --text-body: #ABA5D4;
-  --text-muted: #7E78A8;
-
-  --border-light: rgba(142, 124, 255, 0.14);
-  --border-medium: rgba(142, 124, 255, 0.24);
-  --border-glass: rgba(142, 124, 255, 0.20);
-
-  --color-success-bg: rgba(16, 185, 129, 0.15);
-  --color-warning-bg: rgba(245, 158, 11, 0.15);
-  --color-danger-bg: rgba(239, 68, 68, 0.15);
-  --color-info-bg: rgba(99, 102, 241, 0.15);
-
-  --shadow-card: 0 16px 40px -4px rgba(0, 0, 0, 0.50), 0 0 0 1px rgba(142, 124, 255, 0.16);
-  --shadow-float: 0 28px 64px -8px rgba(0, 0, 0, 0.70), 0 0 24px rgba(124, 108, 240, 0.20);
-  --shadow-modal: 0 32px 80px -12px rgba(0, 0, 0, 0.85), 0 0 0 1px rgba(142, 124, 255, 0.25);
-}
-
 /* ============================================================================
    2. BASE RESET & ACCESSIBILITY
    ============================================================================ */
@@ -154,7 +118,6 @@ body {
   overflow-x: hidden;
   position: relative;
   width: 100%;
-  transition: background-color var(--transition-normal), color var(--transition-normal);
 }
 
 img, svg {
@@ -214,13 +177,13 @@ h1, h2, h3, h4, .brand-logo {
 }
 
 .section-title {
-  font-size: clamp(2rem, 4vw, 2.85rem);
+  font-size: clamp(1.9rem, 3.8vw, 2.85rem);
   margin-top: 12px;
   margin-bottom: 16px;
 }
 
 .section-lead {
-  font-size: clamp(1rem, 1.8vw, 1.15rem);
+  font-size: clamp(0.98rem, 1.8vw, 1.15rem);
   color: var(--text-body);
   line-height: 1.65;
 }
@@ -392,16 +355,11 @@ h1, h2, h3, h4, .brand-logo {
   right: 0;
   height: var(--header-height);
   z-index: 100;
-  background-color: rgba(244, 242, 255, 0.80);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  background-color: rgba(244, 242, 255, 0.88);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
   border-bottom: 1px solid var(--border-light);
   transition: all var(--transition-fast);
-}
-
-[data-theme="dark"] .site-header {
-  background-color: rgba(13, 11, 28, 0.82);
-  border-bottom-color: var(--border-light);
 }
 
 .site-header.is-scrolled {
@@ -414,6 +372,7 @@ h1, h2, h3, h4, .brand-logo {
   align-items: center;
   justify-content: space-between;
   height: 100%;
+  gap: 16px;
 }
 
 .brand-logo {
@@ -422,6 +381,7 @@ h1, h2, h3, h4, .brand-logo {
   gap: 12px;
   font-size: 1.35rem;
   font-weight: 800;
+  flex-shrink: 0;
 }
 
 .logo-mark {
@@ -458,17 +418,17 @@ h1, h2, h3, h4, .brand-logo {
 .desktop-nav .nav-list {
   display: flex;
   align-items: center;
-  gap: 28px;
+  gap: clamp(14px, 1.8vw, 24px);
   list-style: none;
 }
 
 .nav-link {
-  font-size: 0.92rem;
+  font-size: clamp(0.85rem, 0.95vw, 0.92rem);
   font-weight: 600;
   color: var(--text-body);
   transition: color var(--transition-fast);
   padding: 6px 0;
-  position: relative;
+  white-space: nowrap;
 }
 
 .nav-link:hover {
@@ -486,32 +446,7 @@ h1, h2, h3, h4, .brand-logo {
   display: flex;
   align-items: center;
   gap: 12px;
-}
-
-/* Theme Toggle Button */
-.theme-toggle-btn {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: 1px solid var(--border-medium);
-  background: var(--bg-card-solid);
-  color: var(--text-body);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: all var(--transition-fast);
-}
-
-.theme-toggle-btn:hover {
-  border-color: var(--primary-violet);
-  color: var(--primary-violet);
-  transform: rotate(15deg);
-}
-
-.theme-toggle-btn svg {
-  width: 19px;
-  height: 19px;
+  flex-shrink: 0;
 }
 
 .header-phone-btn {
@@ -525,6 +460,7 @@ h1, h2, h3, h4, .brand-logo {
   align-items: center;
   gap: 8px;
   transition: all var(--transition-fast);
+  white-space: nowrap;
 }
 
 .header-phone-btn:hover {
@@ -545,6 +481,7 @@ h1, h2, h3, h4, .brand-logo {
   justify-content: center;
   gap: 5px;
   padding: 8px;
+  flex-shrink: 0;
 }
 
 .hamburger-bar {
@@ -594,7 +531,7 @@ h1, h2, h3, h4, .brand-logo {
 }
 
 /* ============================================================================
-   6. HERO SECTION WITH PHONE MOCKUP & FLOATING CARDS
+   6. HERO SECTION WITH PHONE MOCKUP & SATELLITE CARDS
    ============================================================================ */
 .hero-section {
   padding-top: 48px;
@@ -646,16 +583,16 @@ h1, h2, h3, h4, .brand-logo {
 }
 
 .hero-title {
-  font-size: clamp(2.4rem, 5.2vw, 4.1rem);
+  font-size: clamp(2.3rem, 5vw, 4rem);
   font-weight: 800;
-  line-height: 1.14;
+  line-height: 1.15;
   letter-spacing: -0.035em;
   color: var(--text-heading);
   margin-bottom: 20px;
 }
 
 .hero-lead {
-  font-size: clamp(1.05rem, 2vw, 1.25rem);
+  font-size: clamp(1rem, 2vw, 1.25rem);
   color: var(--text-body);
   line-height: 1.65;
   margin-bottom: 32px;
@@ -677,7 +614,7 @@ h1, h2, h3, h4, .brand-logo {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 24px;
+  gap: clamp(16px, 3vw, 28px);
   flex-wrap: wrap;
 }
 
@@ -694,16 +631,21 @@ h1, h2, h3, h4, .brand-logo {
   color: var(--primary-violet);
 }
 
-/* --- Hero Showcase Container: Center Phone + Satellite Floating Cards --- */
+/* --- Hero Showcase Container --- */
 .hero-stage {
   position: relative;
-  max-width: 960px;
+  max-width: 1040px;
   margin: 0 auto;
-  padding: 40px 20px 20px 20px;
+  padding: 30px 16px 20px 16px;
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 1;
+}
+
+/* On Desktop: contents so floating cards position absolute relative to .hero-stage */
+.hero-cards-wrap {
+  display: contents;
 }
 
 /* Center Phone Mockup (CSS Crafted) */
@@ -719,6 +661,7 @@ h1, h2, h3, h4, .brand-logo {
   display: flex;
   flex-direction: column;
   z-index: 2;
+  flex-shrink: 0;
 }
 
 .phone-notch {
@@ -762,11 +705,6 @@ h1, h2, h3, h4, .brand-logo {
   flex-direction: column;
 }
 
-[data-theme="dark"] .phone-screen {
-  background-color: #161331;
-  color: #FAF8FF;
-}
-
 .phone-app-header {
   padding-bottom: 12px;
   border-bottom: 1px solid var(--border-light);
@@ -805,10 +743,6 @@ h1, h2, h3, h4, .brand-logo {
   border-radius: var(--radius-md);
   border: 1px solid var(--border-light);
   box-shadow: var(--shadow-sm);
-}
-
-[data-theme="dark"] .phone-student-card {
-  background-color: #1F1B40;
 }
 
 .phone-st-left {
@@ -859,7 +793,7 @@ h1, h2, h3, h4, .brand-logo {
   border-radius: var(--radius-pill);
 }
 
-/* Floating Satellite Cards (Around Phone) */
+/* Floating Satellite Cards (Desktop Mode) */
 .floating-card {
   position: absolute;
   background: var(--bg-card);
@@ -879,22 +813,22 @@ h1, h2, h3, h4, .brand-logo {
 }
 
 .card-top-left {
-  top: 80px;
+  top: 60px;
   left: 20px;
   animation-delay: 0s;
   max-width: 250px;
 }
 
 .card-top-right {
-  top: 100px;
+  top: 80px;
   right: 20px;
   animation-delay: 1.5s;
   max-width: 250px;
 }
 
 .card-bottom-left {
-  bottom: 80px;
-  left: 30px;
+  bottom: 60px;
+  left: 20px;
   animation-delay: 2.8s;
   max-width: 260px;
 }
@@ -929,7 +863,7 @@ h1, h2, h3, h4, .brand-logo {
 .avatar-stack-card {
   position: absolute;
   bottom: 40px;
-  right: 40px;
+  right: 30px;
   background: var(--bg-card);
   backdrop-filter: blur(14px);
   border: 1px solid var(--border-glass);
@@ -1591,10 +1525,6 @@ h1, h2, h3, h4, .brand-logo {
   gap: 12px;
 }
 
-[data-theme="dark"] .phone-chat-screen {
-  background: #191B24;
-}
-
 .chat-header {
   display: flex;
   align-items: center;
@@ -1622,10 +1552,6 @@ h1, h2, h3, h4, .brand-logo {
   color: #1E1B4B;
 }
 
-[data-theme="dark"] .chat-title-info strong {
-  color: #FAF8FF;
-}
-
 .chat-title-info small {
   font-size: 0.72rem;
   color: #667781;
@@ -1639,10 +1565,6 @@ h1, h2, h3, h4, .brand-logo {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
 }
 
-[data-theme="dark"] .chat-bubble {
-  background: #242938;
-}
-
 .chat-bubble.fee-bubble {
   border-left: 3px solid #F59E0B;
 }
@@ -1651,10 +1573,6 @@ h1, h2, h3, h4, .brand-logo {
   font-size: 0.82rem;
   color: #111B21;
   line-height: 1.4;
-}
-
-[data-theme="dark"] .chat-text {
-  color: #E9EDEF;
 }
 
 .chat-time {
@@ -1831,6 +1749,7 @@ h1, h2, h3, h4, .brand-logo {
   width: 58px;
   height: 58px;
   transform: rotate(-90deg);
+  flex-shrink: 0;
 }
 
 .ring-bg {
@@ -1873,6 +1792,8 @@ h1, h2, h3, h4, .brand-logo {
   margin-bottom: 16px;
   font-size: 0.88rem;
   color: var(--text-muted);
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .btn-ghost-reset {
@@ -1912,6 +1833,7 @@ h1, h2, h3, h4, .brand-logo {
   padding: 14px 18px;
   box-shadow: var(--shadow-sm);
   transition: all var(--transition-fast);
+  gap: 12px;
 }
 
 .sim-student-row:hover {
@@ -1941,6 +1863,7 @@ h1, h2, h3, h4, .brand-logo {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
 }
 
 .sim-student-row.is-absent .sim-avatar {
@@ -1970,6 +1893,7 @@ h1, h2, h3, h4, .brand-logo {
   font-size: 0.86rem;
   cursor: pointer;
   transition: all var(--transition-fast);
+  white-space: nowrap;
 }
 
 .btn-present-mode {
@@ -2101,6 +2025,7 @@ h1, h2, h3, h4, .brand-logo {
   border-radius: var(--radius-xl);
   box-shadow: var(--shadow-card);
   overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
   padding: 12px;
 }
 
@@ -2583,10 +2508,6 @@ h1, h2, h3, h4, .brand-logo {
   padding: 60px 0 32px 0;
 }
 
-[data-theme="dark"] .site-footer {
-  background-color: #0A0817;
-}
-
 .footer-top-grid {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
@@ -2779,10 +2700,6 @@ h1, h2, h3, h4, .brand-logo {
   gap: 10px;
 }
 
-[data-theme="dark"] .mobile-sticky-bar {
-  background: rgba(13, 11, 28, 0.94);
-}
-
 .mobile-sticky-bar .btn {
   flex: 1;
   padding: 10px 12px;
@@ -2790,58 +2707,104 @@ h1, h2, h3, h4, .brand-logo {
 }
 
 /* ============================================================================
-   22. RESPONSIVE BREAKPOINTS
+   22. COMPREHENSIVE RESPONSIVE BREAKPOINTS
    ============================================================================ */
+
+/* --- Large Laptops / Tablets Landscape (max-width: 1080px) --- */
+@media (max-width: 1080px) {
+  .hero-stage {
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+    padding-top: 16px;
+  }
+
+  .hero-cards-wrap {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    width: 100%;
+    max-width: 640px;
+    margin-top: 14px;
+  }
+
+  .floating-card, .avatar-stack-card {
+    position: static;
+    max-width: none;
+    width: 100%;
+    margin: 0;
+    animation: none;
+    transform: none !important;
+  }
+
+  .avatar-stack-card {
+    grid-column: span 2;
+    justify-content: center;
+  }
+}
+
+/* --- Tablets & Smaller Screens (max-width: 1024px) --- */
 @media (max-width: 1024px) {
+  .desktop-nav, .header-phone-btn {
+    display: none;
+  }
+
+  .mobile-menu-toggle {
+    display: flex;
+  }
+
+  .mobile-sticky-bar {
+    display: flex;
+  }
+
+  body {
+    padding-bottom: 64px; /* Space for fixed bottom bar */
+  }
+
   .slanted-band-inner {
     grid-template-columns: 1fr;
     gap: 20px;
   }
+
   .stats-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
   .roadmap-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
   .violet-cta-banner {
     grid-template-columns: 1fr;
     text-align: center;
   }
+
   .banner-content p {
     margin-left: auto;
     margin-right: auto;
   }
+
   .banner-actions {
     justify-content: center;
   }
+
   .banner-mockup-side {
     display: none;
   }
-}
 
-@media (max-width: 860px) {
-  .desktop-nav, .header-phone-btn {
-    display: none;
-  }
-  .mobile-menu-toggle {
-    display: flex;
-  }
-  .mobile-sticky-bar {
-    display: flex;
-  }
-  body {
-    padding-bottom: 64px; /* Space for sticky bar */
-  }
   .feature-card-detailed,
   .feature-card-detailed.reverse-layout {
     grid-template-columns: 1fr;
   }
+
   .feature-card-detailed.reverse-layout .feature-text-side {
     order: 1;
   }
+
   .feature-card-detailed.reverse-layout .feature-ui-side {
     order: 2;
   }
+
   .problem-split-grid,
   .sub-features-grid,
   .contact-split-grid,
@@ -2849,33 +2812,116 @@ h1, h2, h3, h4, .brand-logo {
   .footer-top-grid {
     grid-template-columns: 1fr;
   }
-  /* Floating satellite cards on tablet */
-  .card-top-left, .card-top-right, .card-bottom-left, .avatar-stack-card {
-    position: static;
-    margin: 12px 0;
-    max-width: 100%;
-    animation: none;
+}
+
+/* --- Small Tablets / Large Phones (max-width: 768px) --- */
+@media (max-width: 768px) {
+  .slanted-band-section {
+    transform: none;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    padding: 44px 0;
   }
-  .hero-stage {
-    flex-direction: column;
-    padding-top: 10px;
+
+  .slanted-band-inner {
+    transform: none;
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .mini-table-row {
+    grid-template-columns: 1.8fr 1fr 1fr;
+  }
+
+  .mini-table-row > span:nth-child(2) {
+    display: none; /* Hide school column on small screens to give full room to student name */
   }
 }
 
+/* --- Phones (max-width: 640px) --- */
+@media (max-width: 640px) {
+  .hero-cards-wrap {
+    grid-template-columns: 1fr;
+    max-width: 330px;
+  }
+
+  .avatar-stack-card {
+    grid-column: span 1;
+  }
+
+  .attendance-mini-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* --- Compact Phones (max-width: 480px) --- */
 @media (max-width: 480px) {
   .hero-title {
     font-size: 2.15rem;
   }
+
+  .hero-lead {
+    font-size: 1rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+  }
+
+  .phone-mockup {
+    width: 100%;
+    max-width: 300px;
+    height: 520px;
+    border-width: 7px;
+    border-radius: 36px;
+  }
+
   .simulator-hud {
     grid-template-columns: 1fr;
     gap: 12px;
   }
+
   .stats-grid {
     grid-template-columns: 1fr;
   }
+
+  .interactive-tabs-nav {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .tab-pill-btn {
+    justify-content: center;
+  }
+
+  .sim-student-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .sim-student-row .sim-toggle-btn {
+    align-self: flex-end;
+  }
+}
+
+/* --- Tiny Phones (max-width: 360px) --- */
+@media (max-width: 360px) {
   .phone-mockup {
-    width: 290px;
-    height: 540px;
+    max-width: 275px;
+    height: 480px;
+    border-width: 6px;
+    border-radius: 32px;
+  }
+
+  .btn {
+    padding: 10px 18px;
+    font-size: 0.88rem;
   }
 }
 

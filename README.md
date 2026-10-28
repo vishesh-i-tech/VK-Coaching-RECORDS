@@ -17,7 +17,8 @@ A high-conversion, modern SaaS landing page and interactive demo designed specif
 - **Interactive Live Playground**:
   - **Attendance Simulator**: One-tap toggle between Present / Absent with animated circular SVG progress ring and instant absentee toast alerts.
   - **Fee Collection Simulator**: Real-time progress bar for monthly collection targets and one-tap fee collection with auto-generated receipt numbering.
-- **Dark & Light Mode**: Built-in toggle with persistent `localStorage` memory and system color-scheme detection.
+- **100% Fully Responsive Layout**: Seamless fluid layout across desktop (1440px+), laptops, tablets (768px–1024px), and smartphones (320px–480px) with clean mobile drawer navigation and a sticky bottom action bar.
+- **Pure Violet SaaS Aesthetics**: Consistent, high-contrast light violet palette with zero visual clutter.
 - **Real Animated Number Counters**: Smooth count-up animations for key metrics on scroll.
 - **Sticky Mobile Action Bar**: Fixed bottom bar on smartphones for quick Call, WhatsApp, and Demo access.
 - **Zero Fake Social Proof**: Grounded in real, neutral coaching metrics and project data.

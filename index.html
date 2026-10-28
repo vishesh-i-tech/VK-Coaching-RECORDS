@@ -60,21 +60,6 @@
 
       <!-- Desktop Header Actions -->
       <div class="header-cta-group">
-        <!-- Theme Toggle Button -->
-        <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle Dark / Light Theme" title="Toggle theme">
-          <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <circle cx="12" cy="12" r="5"></circle>
-            <line x1="12" y1="1" x2="12" y2="3"></line>
-            <line x1="12" y1="21" x2="12" y2="23"></line>
-            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-            <line x1="1" y1="12" x2="3" y2="12"></line>
-            <line x1="21" y1="12" x2="23" y2="12"></line>
-            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-          </svg>
-        </button>
-
         <a href="#contact" class="btn header-phone-btn" data-config-call aria-label="Call Us">
           <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
           <span data-config="phoneNumber">+91 98765 43210</span>
@@ -171,47 +156,6 @@
         <!-- Hero Stage: Center Phone Mockup + Floating Satellite Cards -->
         <div class="hero-stage">
           
-          <!-- Floating Satellite Card 1: Today's Attendance -->
-          <div class="floating-card card-top-left">
-            <span class="fc-title">Today's Attendance</span>
-            <div class="fc-main-val">
-              <span>93.3%</span>
-              <span class="badge badge-success">28 / 30</span>
-            </div>
-            <p class="fc-subtext">2 absent today • 1-tap WhatsApp alert sent to parents</p>
-          </div>
-
-          <!-- Floating Satellite Card 2: October Fees -->
-          <div class="floating-card card-top-right">
-            <span class="fc-title">October Fee Collected</span>
-            <div class="fc-main-val">
-              <span>₹1,42,500</span>
-              <span class="badge badge-warning">4 Due</span>
-            </div>
-            <p class="fc-subtext">₹6,000 pending from 4 students</p>
-          </div>
-
-          <!-- Floating Satellite Card 3: Last Unit Test -->
-          <div class="floating-card card-bottom-left">
-            <span class="fc-title">Last Unit Test (Maths)</span>
-            <div class="fc-main-val">
-              <span>79.4%</span>
-              <span class="badge badge-violet">Batch Avg</span>
-            </div>
-            <p class="fc-subtext">Topper: Aarav Sharma (96%) • 5 Tests logged</p>
-          </div>
-
-          <!-- Floating Avatar Stack Card -->
-          <div class="avatar-stack-card">
-            <div class="avatar-stack">
-              <span class="avatar-stack-item">AS</span>
-              <span class="avatar-stack-item">PV</span>
-              <span class="avatar-stack-item">AP</span>
-              <span class="avatar-stack-item">KM</span>
-            </div>
-            <span class="avatar-stack-caption">30 Active Students</span>
-          </div>
-
           <!-- Center Realistic CSS Phone Mockup -->
           <div class="phone-mockup">
             <div class="phone-notch">
@@ -283,6 +227,52 @@
               </div>
             </div>
           </div>
+
+          <!-- Satellite Cards Container (Floating on desktop, neat responsive grid on mobile/tablet) -->
+          <div class="hero-cards-wrap">
+            <!-- Satellite Card 1: Today's Attendance -->
+            <div class="floating-card card-top-left">
+              <span class="fc-title">Today's Attendance</span>
+              <div class="fc-main-val">
+                <span>93.3%</span>
+                <span class="badge badge-success">28 / 30</span>
+              </div>
+              <p class="fc-subtext">2 absent today • 1-tap WhatsApp alert sent to parents</p>
+            </div>
+
+            <!-- Satellite Card 2: October Fees -->
+            <div class="floating-card card-top-right">
+              <span class="fc-title">October Fee Collected</span>
+              <div class="fc-main-val">
+                <span>₹1,42,500</span>
+                <span class="badge badge-warning">4 Due</span>
+              </div>
+              <p class="fc-subtext">₹6,000 pending from 4 students</p>
+            </div>
+
+            <!-- Satellite Card 3: Last Unit Test -->
+            <div class="floating-card card-bottom-left">
+              <span class="fc-title">Last Unit Test (Maths)</span>
+              <div class="fc-main-val">
+                <span>79.4%</span>
+                <span class="badge badge-violet">Batch Avg</span>
+              </div>
+              <p class="fc-subtext">Topper: Aarav Sharma (96%) • 5 Tests logged</p>
+            </div>
+
+            <!-- Avatar Stack Card -->
+            <div class="avatar-stack-card">
+              <div class="avatar-stack">
+                <span class="avatar-stack-item">AS</span>
+                <span class="avatar-stack-item">PV</span>
+                <span class="avatar-stack-item">AP</span>
+                <span class="avatar-stack-item">KM</span>
+              </div>
+              <span class="avatar-stack-caption">30 Active Students</span>
+            </div>
+          </div>
+
+        </div>
 
         </div>
 
